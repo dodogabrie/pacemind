@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Questions and discussions
+    url: https://github.com/dodogabrie/trail_gpx_analyzer/discussions
+    about: Ask questions, share race reports, discuss training plans
+  - name: Security issues
+    url: https://github.com/dodogabrie/trail_gpx_analyzer/security/advisories/new
+    about: Report a vulnerability privately

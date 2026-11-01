@@ -1,0 +1,35 @@
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile.dev
+    volumes:
+      - ./backend:/app/backend
+      - ./books:/app/books
+      - ./backend/entrypoint.sh:/entrypoint.sh:ro
+    env_file:
+      - ./backend/.env
+    environment:
+      FLASK_ENV: development
+      FLASK_DEBUG: "1"
+      RUN_MIGRATIONS: "0"
+      STRAVA_REDIRECT_URI: http://localhost:8080/api/auth/callback
+      CORS_ORIGINS: http://localhost:8080
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile.dev
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    environment:
+      VITE_API_URL: /api
+    deploy:
+      resources:
+        limits:
+          memory: 512M
+
+  nginx:
+    volumes:
+      - ./nginx/dev.conf:/etc/nginx/conf.d/default.conf:ro

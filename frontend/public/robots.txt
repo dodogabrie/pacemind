@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+Disallow: /predict
+Disallow: /prediction/
+Disallow: /analysis/
+Disallow: /training
+Disallow: /training-plan
+Disallow: /race/
+Disallow: /season
+Disallow: /routes
+Disallow: /auth-success
+Disallow: /auth-error
+
+Sitemap: https://pacemind.app/sitemap.xml

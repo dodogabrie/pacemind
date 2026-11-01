@@ -1,0 +1,69 @@
+{
+  "topics": {
+    "aerobic_base": {
+      "file": "aerobic_base.md",
+      "description": "Aerobic threshold development, ADS diagnosis and cure, fat adaptation, volume guidelines, continuous training methods, base building principles",
+      "keywords": ["aerobic", "base", "AeT", "ADS", "aerobic deficiency", "fat adaptation", "zone 1", "zone 2", "volume", "easy running", "conversational", "MAF", "base building", "low intensity"]
+    },
+    "intensity_zones": {
+      "file": "intensity_zones.md",
+      "description": "Five-zone training system, AeT and LT testing methods, Ten Percent Test, polarized training, zone definitions and training effects",
+      "keywords": ["zones", "intensity", "heart rate", "AeT", "LT", "lactate threshold", "aerobic threshold", "testing", "ten percent test", "polarized", "zone 3", "zone 4", "zone 5", "VO2max"]
+    },
+    "periodization": {
+      "file": "periodization.md",
+      "description": "Training phases (transition, base, precompetition, competition), capacity vs utilization, load progression, taper protocols, race planning, athlete categories",
+      "keywords": ["periodization", "base period", "build", "peak", "taper", "competition", "capacity", "utilization", "mesocycle", "macrocycle", "progression", "race planning", "category 1", "category 2", "weekly distances"]
+    },
+    "strength_training": {
+      "file": "strength_training.md",
+      "description": "General and specific strength, assessment protocols, strength programs (stages 1-3), hill sprints, muscular endurance (gym and outdoor), core training",
+      "keywords": ["strength", "muscular endurance", "hill sprints", "bounding", "core", "squat", "push-up", "pull-up", "gym", "ME workout", "frontier fibers", "stride length", "injury prevention"]
+    },
+    "treadmill_training": {
+      "file": "treadmill_training.md",
+      "description": "Treadmill-heavy plans: what transfers to trail racing, incline settings (1% rule, max-incline climbs, power hiking), covering the downhill without a decline (outdoor descents, repeated-bout effect, eccentric strength), sources",
+      "keywords": ["treadmill", "tapis", "tapis roulant", "incline", "indoor", "decline", "no decline", "downhill", "eccentric", "repeated bout", "quadriceps", "soreness", "power hiking"]
+    },
+    "uphill_training": {
+      "file": "uphill_training.md",
+      "description": "Hill-specific training methods, vertical training volume, downhill technique development, movement economy on terrain, steep interval protocols",
+      "keywords": ["uphill", "climbing", "vertical", "hill repeats", "gradient", "steep", "downhill", "terrain", "economy", "technique", "elevation gain", "vert"]
+    },
+    "recovery": {
+      "file": "recovery.md",
+      "description": "Recovery methods ranked by importance, fatigue types and management, monitoring tools, returning after illness/breaks, overtraining syndrome, ferritin",
+      "keywords": ["recovery", "fatigue", "overtraining", "sleep", "massage", "DOMS", "illness", "rest", "ferritin", "iron", "motivation", "monitoring", "workout grading", "heart rate"]
+    },
+    "mental_toughness": {
+      "file": "mental_toughness.md",
+      "description": "Central governor theory, race psychology strategies, reframing adversity, managing lows in ultras, mantras, faking positivity, seven key race recommendations",
+      "keywords": ["mental", "psychology", "motivation", "DNF", "central governor", "adversity", "mindset", "race strategy", "quitting", "lows", "highs", "mantras", "positivity", "sleep monsters"]
+    },
+    "weekly_structure": {
+      "file": "weekly_structure.md",
+      "description": "Week type templates (Base, Intensity, Recovery, Specificity, Taper, Goal), example training weeks, modulation patterns, race season management",
+      "keywords": ["weekly", "schedule", "structure", "base week", "recovery week", "taper week", "race week", "modulation", "back-to-back", "training plan", "daily"]
+    },
+    "race_pacing": {
+      "file": "race_pacing.md",
+      "description": "Three-thirds pacing strategy, trail-specific pacing by feel, aid station strategy, pace bands, three-tiered goal setting, race checklists, going off course",
+      "keywords": ["pacing", "race day", "aid station", "pace band", "goals", "splits", "effort", "conservative", "finish", "checklist", "course", "execution"]
+    },
+    "ultra_strategy": {
+      "file": "ultra_strategy.md",
+      "description": "Ultra-specific training (back-to-backs, two-a-days, gut training), race logistics (drop bags, crew, pacers), nighttime running, when to quit vs tough it out, distance progression",
+      "keywords": ["ultra", "ultramarathon", "100 mile", "50 mile", "50K", "back-to-back", "crew", "pacer", "drop bag", "night running", "sleep", "DNF", "quit", "gut training", "time on feet"]
+    },
+    "nutrition_racing": {
+      "file": "nutrition_racing.md",
+      "description": "Pre-run fueling, during-run calories by distance, post-run recovery window, hydration and electrolytes, hyponatremia prevention, daily nutrition principles, iron for runners",
+      "keywords": ["nutrition", "fueling", "calories", "gels", "hydration", "electrolytes", "hyponatremia", "dehydration", "bonk", "glycogen", "recovery", "iron", "eating", "aid station food", "sports drink"]
+    },
+    "nutrition_daily": {
+      "file": "nutrition_daily.md",
+      "description": "Plant-based eating for endurance athletes, protein strategies, example daily diet, race-day recipes (rice balls, quinoa porridge), transitioning to plant-based, iron for vegetarians",
+      "keywords": ["vegan", "vegetarian", "plant-based", "protein", "diet", "daily nutrition", "recipes", "rice balls", "quinoa", "tempeh", "tofu", "iron", "whole foods", "recovery food"]
+    }
+  }
+}

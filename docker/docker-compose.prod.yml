@@ -1,0 +1,58 @@
+services:
+  postgres:
+    restart: always
+
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    env_file:
+      - .env
+    environment:
+      FLASK_ENV: production
+      # Override for your production domain:
+      # STRAVA_REDIRECT_URI: https://yourdomain.com/api/auth/callback
+      # CORS_ORIGINS: https://yourdomain.com
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:5000/api/health')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
+    restart: always
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+  frontend:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+    deploy:
+      resources:
+        limits:
+          memory: 128M
+        reservations:
+          memory: 64M
+    restart: always
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+  nginx:
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx/prod.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./ssl/certs:/etc/nginx/ssl:ro
+    restart: always
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"

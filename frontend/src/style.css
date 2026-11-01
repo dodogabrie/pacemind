@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap");
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    /* Nature / Trail Palette */
+    --bg-page: #f8fafc; /* Slate 50 - Fog/Mist */
+    --bg-surface: #ffffff; /* White */
+    
+    --border-subtle: #e2e8f0; /* Slate 200 */
+    --border-medium: #cbd5e1; /* Slate 300 */
+
+    --text-primary: #1e293b; /* Slate 800 */
+    --text-secondary: #475569; /* Slate 600 */
+    --text-muted: #94a3b8; /* Slate 400 */
+
+    /* Brand Colors */
+    --brand-forest: #047857; /* Emerald 700 */
+    --brand-sky: #0284c7; /* Sky 600 */
+    --brand-stone: #64748b; /* Slate 500 */
+    --brand-earth: #b45309; /* Amber 700 */
+
+    /* Fonts */
+    --font-sans: "Inter", system-ui, sans-serif;
+    --font-display: "Barlow Condensed", sans-serif;
+    --font-mono: "JetBrains Mono", monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--bg-page);
+    color: var(--text-primary);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    color: var(--text-primary);
+  }
+
+  code, pre, .font-mono {
+    font-family: var(--font-mono);
+  }
+}
+
+@layer components {
+  /* Layout */
+  .layout {
+    @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* Cards */
+  .card {
+    @apply w-full bg-white border border-slate-200 rounded-lg shadow-sm transition-shadow hover:shadow-md p-6;
+  }
+
+  .card-flat {
+    @apply bg-slate-50 border border-slate-200 rounded-lg p-6;
+  }
+
+  .card-soft {
+    @apply bg-slate-50/80 border border-slate-200 rounded-lg p-4;
+  }
+
+  /* Buttons */
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-2.5 text-sm font-semibold transition-all duration-200 border border-transparent rounded-full uppercase tracking-wide hover:-translate-y-0.5 active:translate-y-0;
+  }
+
+  .btn-primary {
+    @apply bg-emerald-700 text-white hover:bg-emerald-800 shadow-lg shadow-emerald-700/20;
+  }
+
+  .btn-secondary {
+    @apply bg-sky-600 text-white hover:bg-sky-700 shadow-lg shadow-sky-600/20;
+  }
+
+  .btn-outline {
+    @apply border-slate-300 bg-white text-slate-700 hover:border-emerald-600 hover:text-emerald-700;
+  }
+
+  .btn-ghost {
+    @apply text-slate-600 hover:bg-slate-100;
+  }
+
+  /* Inputs */
+  .input-field {
+    @apply block w-full rounded-md border-slate-300 shadow-sm focus:border-emerald-500 focus:ring-emerald-500 sm:text-sm py-2 px-3 bg-white;
+  }
+
+  /* Utilities */
+  .badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium uppercase tracking-wide;
+  }
+  
+  .badge-emerald {
+    @apply bg-emerald-100 text-emerald-800;
+  }
+
+  .badge-sky {
+    @apply bg-sky-100 text-sky-800;
+  }
+  
+  .section-header {
+    @apply flex items-center gap-3 mb-6;
+  }
+  
+  .section-title {
+    @apply text-2xl font-bold text-slate-900 uppercase tracking-tight;
+  }
+
+  .section-subtitle {
+    @apply text-sm text-slate-600;
+  }
+
+  /* Segmented Controls */
+  .segmented {
+    @apply inline-flex items-center gap-1 rounded-lg border border-slate-200 bg-slate-50 p-1;
+  }
+
+  .segment-btn {
+    @apply rounded-md px-3 py-1.5 text-xs font-semibold uppercase tracking-wide text-slate-500 transition-all hover:text-slate-700;
+  }
+
+  .segment-active {
+    @apply bg-white text-emerald-700 shadow-sm ring-1 ring-slate-200;
+  }
+
+  /* Alerts */
+  .alert {
+    @apply rounded-lg border px-4 py-3 text-sm flex items-center gap-3;
+  }
+
+  .alert-info {
+    @apply border-sky-200 bg-sky-50 text-sky-800;
+  }
+
+  .alert-warn {
+    @apply border-amber-200 bg-amber-50 text-amber-800;
+  }
+
+  .alert-error {
+    @apply border-rose-200 bg-rose-50 text-rose-800;
+  }
+
+  .stack {
+    @apply space-y-6;
+  }
+
+  .link {
+    @apply text-emerald-700 hover:text-emerald-800 font-medium underline-offset-4 hover:underline transition-colors;
+  }
+
+  /* Hero Card for Prediction */
+  .hero-card {
+    @apply relative overflow-hidden rounded-2xl p-8 bg-white border border-slate-200 shadow-lg;
+  }
+
+  .pill {
+    @apply inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wide backdrop-blur-sm;
+  }
+}

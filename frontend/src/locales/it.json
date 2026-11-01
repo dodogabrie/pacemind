@@ -1,0 +1,1494 @@
+{
+  "agentChat": {
+    "badge": "AGENTE AI",
+    "title": "Coach AI",
+    "collapsed_hint": "Legge i tuoi dati, propone i punti chiave e ritocca la stima — agisce su questa pagina",
+    "ask": "Chiedi",
+    "header_sub": "Ritocca la stima, propone punti chiave, legge terreno e meteo, pianifica l'alimentazione",
+    "history": "Chat passate",
+    "new_chat": "Nuova chat",
+    "past_chats": "Chat passate",
+    "no_chats": "Nessuna chat salvata.",
+    "untitled": "Chat senza titolo",
+    "msg_count": "{n} msg",
+    "delete": "Elimina",
+    "minimize": "Riduci",
+    "tools_used": "{n} strumento usato | {n} strumenti usati",
+    "suggested_waypoints": "Punti suggeriti",
+    "accept_all": "Accetta tutti",
+    "dismiss_all": "Scarta tutti",
+    "accept": "Accetta",
+    "dismiss": "Scarta",
+    "added": "Aggiunto",
+    "dismissed": "Scartato",
+    "stop": "Sosta: {s}s",
+    "composing": "Scrivo la risposta...",
+    "thinking": "Ci penso...",
+    "placeholder_race": "Chiedi di pacing, alimentazione, terreno, strategia...",
+    "placeholder": "Chiedi del percorso, del pacing, dell'alimentazione...",
+    "remaining": "Ti resta {n} messaggio oggi | Ti restano {n} messaggi oggi",
+    "more_steps": "+ altri {n} passaggi completati",
+    "welcome": "Cosa vuoi sapere sul tuo percorso?",
+    "error": "Errore: {msg}",
+    "no_response": "Nessuna risposta ricevuta.",
+    "generic_error": "Qualcosa è andato storto",
+    "wp": {
+      "aid_station": "Ristoro",
+      "water": "Acqua",
+      "checkpoint": "Controllo",
+      "caution": "Attenzione",
+      "generic": "Punto"
+    },
+    "quick": {
+      "briefing": {
+        "label": "Briefing di gara",
+        "prompt": "Fammi un briefing completo della gara sul mio percorso"
+      },
+      "pacing": {
+        "label": "Strategia di pacing",
+        "prompt": "Che strategia di pacing mi consigli?"
+      },
+      "waypoints": {
+        "label": "Aggiungi i ristori",
+        "prompt": "Suggeriscimi i punti ristoro e acqua lungo il mio percorso"
+      },
+      "nutrition": {
+        "label": "Piano alimentare",
+        "prompt": "Stimami alimentazione e idratazione per la gara"
+      },
+      "ready": {
+        "label": "Sono pronto?",
+        "prompt": "Analizza il mio carico di allenamento e dimmi se sono pronto per questo percorso"
+      }
+    }
+  },
+  "trainingCenter": {
+    "title": "Allenamento AI",
+    "subtitle": "Scegli le uscite che ti rappresentano meglio e affina il motore.",
+    "status_title": "Stato del sistema di stima",
+    "retraining": "Ricalibro...",
+    "retrain": "Ricalibra",
+    "current_tier": "Livello attuale",
+    "activities_downloaded": "Attività scaricate",
+    "progress_to": "Verso {tier}",
+    "more_needed": "Ne mancano {n}",
+    "tier_min": "{n}+ attività",
+    "tier1": {
+      "name": "Livello 1: Fisica",
+      "desc": "Modello fisico standard"
+    },
+    "tier2": {
+      "name": "Livello 2: Su misura",
+      "desc": "Calibrato sulle tue ultime 10 uscite"
+    },
+    "tier3": {
+      "name": "Livello 3: Le tue abitudini",
+      "desc": "Impara come corri davvero: salite, discese, finali di gara"
+    },
+    "tier_names": {
+      "TIER_1_PHYSICS": "Fisica di base",
+      "TIER_2_PARAMETER_LEARNING": "Fisica su misura",
+      "TIER_3_RESIDUAL_ML": "Fisica + le tue abitudini"
+    },
+    "loading_tier": "Carico il livello...",
+    "activities_title": "Attività di allenamento",
+    "loading_activities": "Carico le attività...",
+    "no_activities": "Non hai ancora scaricato attività. Scaricale qui sotto per iniziare.",
+    "included_in_training": "Usate nel modello",
+    "excluded": "Escluse",
+    "included": "Incluse",
+    "total_downloaded": "Scaricate in tutto",
+    "col": {
+      "date": "Data",
+      "type": "Tipo",
+      "distance": "Distanza",
+      "segments": "Tratti",
+      "weight": "Peso",
+      "training": "Modello",
+      "activity": "Attività",
+      "score": "Punteggio",
+      "status": "Stato"
+    },
+    "download_title": "Scarica le attività",
+    "select_best": "Le {n} migliori",
+    "long_preferred": "(Meglio trail e uscite lunghe)",
+    "clear": "Azzera",
+    "refreshing": "Aggiorno...",
+    "refresh": "Aggiorna da Strava",
+    "score_hint": "Distanza (km) + D+ (m) / 100",
+    "downloaded": "Scaricata",
+    "dl_success": "{n} attività scaricate",
+    "dl_skipped": "{n} attività saltate (già scaricate)",
+    "dl_failed": "{n} attività non scaricate",
+    "toggle_failed": "Non riesco ad aggiornare l'attività: {msg}",
+    "retrain_failed": "Riaddestramento non riuscito: {msg}",
+    "races": {
+      "title": "Le tue gare",
+      "subtitle": "Le gare insegnano al modello come corri quando conta. Confermale con un tocco.",
+      "loading": "Cerco le tue gare...",
+      "no_recent_title": "Nessuna gara negli ultimi 12 mesi",
+      "no_recent_text": "Segnane una qui sotto o carica il file: le previsioni per il giorno della gara diventano più precise.",
+      "upload": "Carica il file della gara",
+      "candidates_title": "Queste erano gare?",
+      "planned_question": "È questa la tua gara, {race}?",
+      "yes": "Sì, gara",
+      "no": "No",
+      "marked_title": "Gare segnate",
+      "unmark": "Non è una gara",
+      "empty": "Nessuna gara trovata tra le tue attività.",
+      "source": {
+        "strava_flag": "da Strava",
+        "user": "segnata da te"
+      },
+      "reason": {
+        "name": "nome: «{detail}»",
+        "calendar": "in calendario: {detail}",
+        "planned": "in programma: {detail}",
+        "effort": "{detail}% più veloce del solito",
+        "weekend_morning": "weekend, di mattina"
+      },
+      "saved_race": "Gara salvata. Ricalibro le tue previsioni in background.",
+      "saved_not_race": "Ok, non è una gara.",
+      "save_failed": "Salvataggio non riuscito, riprova."
+    },
+    "personal": {
+      "active": "Le tue abitudini sono attive: sulle ultime {n} uscite hanno ridotto l'errore medio dal {t2}% al {t3}%.",
+      "not_better": "Le tue abitudini sono in pausa: sulle ultime {n} uscite non battono ancora il modello calibrato ({t3}% contro {t2}% di errore medio). Usiamo quello.",
+      "worse_bias": "Le tue abitudini sono in pausa: sbagliavano più spesso nella stessa direzione del modello calibrato. Usiamo quello.",
+      "not_enough_history": "Per mettere alla prova le tue abitudini servono almeno 30 uscite con traccia. Intanto usiamo il modello calibrato."
+    },
+    "retrain_started": "Ricalibrazione avviata: tra un minuto le previsioni sono aggiornate."
+  },
+  "workoutEditor": {
+    "title": "Modifica allenamento",
+    "week": "Settimana {n}",
+    "title_placeholder": "Titolo dell'allenamento",
+    "text_label": "Testo dell'allenamento",
+    "cheatsheet": "Come si scrive",
+    "cheatsheet_body": "Riscaldamento 15min Z2 on strada\n4x:\n  1km +80m {'@'} 4:30/km on sentiero   # ripetuta in salita (solo D+)\n  Recupero 3min Z1\nCorsa 10km +-200m                    # dislivello andata e ritorno\nDefaticamento 10min RPE 2\n\n  Segni: +200m solo salita, -200m solo discesa, +-200m andata e ritorno\n  Obiettivi: Z1-Z5  RPE 1-10  {'@'} 4:30/km  {'@'} Z2\n  In inglese: Warmup, Run, Recovery, Cooldown",
+    "preview": "Anteprima",
+    "parsing": "Leggo…",
+    "line_error": "Riga {line}: {msg}",
+    "steps": "{n} fase | {n} fasi",
+    "cancel": "Annulla",
+    "saving": "Salvo…",
+    "save": "Salva",
+    "parse_failed": "Non riesco a leggere il testo",
+    "save_failed": "Salvataggio non riuscito",
+    "kw": {
+      "warmup": "Riscaldamento",
+      "work": "Corsa",
+      "rest": "Recupero",
+      "cooldown": "Defaticamento"
+    },
+    "terrain": {
+      "road": "strada",
+      "trail": "sentiero",
+      "mixed": "misto"
+    }
+  },
+  "raceReport": {
+    "loading": "Carico il report...",
+    "title": "Report di gara",
+    "actual": "Reale",
+    "predicted": "Stimato",
+    "difference": "Differenza",
+    "pace_comparison": "Ritmo km per km",
+    "insights": "Cosa emerge",
+    "splits": "Dettaglio parziali",
+    "actual_pace": "Ritmo reale",
+    "predicted_pace": "Ritmo stimato",
+    "diff": "Diff.",
+    "grade": "Pendenza"
+  },
+  "calibration": {
+    "title": "Controlla e modifica la calibrazione",
+    "intro": "Queste modifiche cambiano il tuo profilo di ritmo personale, quello usato per le stime.",
+    "flat_pace": "Ritmo in piano",
+    "reset": "Ripristina",
+    "pace_at_grades": "Ritmo per pendenza",
+    "pace_at_grades_hint": "Indica il ritmo che tieni a ogni pendenza",
+    "samples": "{n} campione | {n} campioni",
+    "no_data": "nessun dato",
+    "profile_title": "Profilo di ritmo (radar)",
+    "baseline_vs_you": "Riferimento e profilo tuo",
+    "this_week": "Questa settimana",
+    "last_week": "Settimana scorsa",
+    "last_month": "Mese scorso",
+    "show_comparison": "Mostra confronto",
+    "chart_hint": "Più area = più prestazione. Il grigio è il riferimento, il blu mostra quanto te ne discosti.",
+    "click_hint": "Tocca i PUNTI BLU per modificare ogni pendenza",
+    "downhill": "Discesa",
+    "uphill": "Salita",
+    "pace_label": "Ritmo (min/km)",
+    "reset_baseline": "Torna al riferimento",
+    "done": "Fatto",
+    "skip": "Salta",
+    "save_continue": "Salva e continua",
+    "err_flat_nan": "Il ritmo in piano deve essere un numero",
+    "err_flat_range": "Il ritmo in piano deve stare tra 0 e 20 min/km",
+    "err_min_anchors": "Inserisci almeno 3 ritmi per salvare",
+    "err_anchor_range": "Ritmo al {grade}% fuori scala ({min}–{max}/km)",
+    "err_too_fast": "Ritmo troppo veloce (min: {pace}/km)",
+    "err_too_slow": "Ritmo troppo lento (max: {pace}/km)",
+    "flat_0": "Piano (0%):",
+    "series_baseline": "Riferimento (globale)",
+    "series_you": "Profilo tuo",
+    "baseline": "Riferimento",
+    "series_previous": "Precedente ({period})",
+    "previous": "Precedente",
+    "personalized": "Personalizzato"
+  },
+  "raceDrawer": {
+    "details": "Dettagli gara",
+    "race": "Gara",
+    "export_ical": "Esporta iCal",
+    "export_intervals": "Manda a intervals.icu",
+    "intervals_key_prompt": "La tua API key di intervals.icu (Settings > Developer settings). Da lì gli allenamenti arrivano sull'orologio.",
+    "intervals_done": "{n} allenamenti su intervals.icu: arrivano sull'orologio alla prossima sincronizzazione.",
+    "intervals_failed": "Invio a intervals.icu non riuscito.",
+    "race_brief": "Brief gara PDF",
+    "complete": "Registra la gara",
+    "low_compliance": "Questa settimana sei sotto il carico previsto: chiedi al coach come aggiustare.",
+    "gated_compliance": "Lo storico completo del rispetto del piano è Premium.",
+    "gated_trend": "L'andamento della stima nel tempo è Premium.",
+    "upgrade": "Passa a Premium →",
+    "promo": "Sblocca la preparazione completa a $4, valida fino al giorno della gara.",
+    "view_report": "Vedi il report di gara →",
+    "select_activity": "Scegli l'attività Strava di questa gara:",
+    "loading_activities": "Carico le ultime attività…",
+    "no_activities": "Nessuna attività recente.",
+    "cancel": "Annulla",
+    "generating": "Genero…",
+    "generate": "Crea il report"
+  },
+  "calendar": {
+    "title": "Calendario allenamenti",
+    "subtitle": "Aggiungi tu gli allenamenti o chiedi al coach di riempire la settimana.",
+    "prev_weeks": "4 settimane prima",
+    "today": "Oggi",
+    "next_weeks": "4 settimane dopo",
+    "collapse_coach": "Chiudi il pannello del coach",
+    "open_coach": "Apri il coach",
+    "welcome": "Ciao! Sono il tuo coach. Dimmi cosa ti serve: un piano per la gara, gli allenamenti di questa settimana o una seduta da sistemare.",
+    "ask_about": "Su {day}: ",
+    "cta_generate": "Creami un percorso tipo di montagna da usare come riferimento.",
+    "cta_upload": "Vorrei caricare un GPX da usare come percorso tipo di montagna."
+  },
+  "locations": {
+    "title": "Dove ti alleni",
+    "intro": "Dicci dove corri nei vari giorni: il piano ti propone un giro adatto a ogni allenamento, partendo da lì.",
+    "name": "Nome del luogo",
+    "radius": "Raggio",
+    "remove": "Elimina luogo",
+    "add": "Aggiungi luogo",
+    "new": "Nuovo luogo",
+    "empty": "Ancora nessun luogo. Aggiungine uno e toccalo sulla mappa per posizionarlo.",
+    "map_hint": "Scegli un luogo, poi tocca la mappa per spostarlo.",
+    "for_workout": "Luogo di questo allenamento",
+    "by_weekday": "Luogo del giorno",
+    "show_map": "Mostra il giro sulla mappa",
+    "base": "Base di allenamento"
+  },
+  "calendarWeek": {
+    "move_failed": "Impossibile spostare l'allenamento",
+    "no_route": "Nessun percorso adatto: cercalo o aggiungilo in Percorsi",
+    "race": "Gara: {name}",
+    "edit": "Modifica allenamento",
+    "ask_coach": "Chiedi al coach di questo giorno",
+    "add": "Aggiungi allenamento il {date}",
+    "week": "Settimana {n}",
+    "days": {
+      "Monday": "Lun",
+      "Tuesday": "Mar",
+      "Wednesday": "Mer",
+      "Thursday": "Gio",
+      "Friday": "Ven",
+      "Saturday": "Sab",
+      "Sunday": "Dom"
+    },
+    "types": {
+      "easy": "Lento",
+      "tempo": "Medio",
+      "intervals": "Ripetute",
+      "long_run": "Lungo",
+      "hill_repeats": "Salite",
+      "rest": "Riposo",
+      "cross_train": "Cross",
+      "recovery": "Recupero",
+      "vert_session": "Vert",
+      "back_to_back": "B2B",
+      "race_simulation": "Simul.",
+      "strength": "Forza",
+      "descent_session": "Discesa",
+      "uphill_intervals": "Salita",
+      "easy_pickups": "Allunghi"
+    },
+    "open_analysis": "Apri l'analisi di {name}"
+  },
+  "trainingPrefs": {
+    "title": "Le tue preferenze",
+    "none": "— nessuno —",
+    "back": "Indietro",
+    "save": "Salva",
+    "next": "Avanti",
+    "steps": {
+      "time_budget": {
+        "title": "Il tuo tempo",
+        "help": "Quello che ci sta davvero in una settimana normale."
+      },
+      "volume": {
+        "title": "Chilometraggio settimanale",
+        "help": "Il massimo che reggi, non la tua media attuale."
+      },
+      "mountain": {
+        "title": "Montagna",
+        "help": "Quanto ti è facile trovare salite vere?"
+      },
+      "terrain": {
+        "title": "Il tuo terreno",
+        "help": "Controlla il profilo che abbiamo ricavato dalle tue ultime uscite."
+      },
+      "sample_route": {
+        "title": "Percorso tipo",
+        "help": "Carica o genera un percorso simile alle tue uscite abituali."
+      }
+    },
+    "fields": {
+      "available_hours_per_week": {
+        "label": "Quante ore a settimana puoi allenarti?",
+        "help": "Pensa a una settimana media realistica."
+      },
+      "usual_midweek_hours": {
+        "label": "Quanto dura di solito un'uscita infrasettimanale (ore)?"
+      },
+      "max_weekly_km": {
+        "label": "Quanti km a settimana riesci a fare al massimo?"
+      },
+      "max_long_run_km": {
+        "label": "Quanti km al massimo nel lungo?",
+        "help": "Il lungo più lungo che riesci a fare da solo in allenamento. Per le gare lunghe potremmo proporti una gara di preparazione (B/C) al posto del lungo."
+      },
+      "max_long_run_hours": {
+        "label": "Quante ore al massimo nel lungo?",
+        "help": "Il lungo più lungo che riesci a fare da solo. È il vincolo principale: km e D+ vengono da qui."
+      },
+      "long_run_day": {
+        "label": "Quando fai il lungo?"
+      },
+      "mountain_access_per_week": {
+        "label": "Quante volte a settimana riesci ad andare in montagna?",
+        "help": "Metti 0.5 se ci vai una volta ogni 2 settimane."
+      },
+      "mountain_days": {
+        "label": "In quali giorni puoi andare in montagna?"
+      },
+      "max_mountain_hours_per_outing": {
+        "label": "Quante ore al massimo per un'uscita in montagna?"
+      },
+      "max_mountain_elevation_m": {
+        "label": "Quanto D+ riesci a fare al massimo in un'uscita (m)?"
+      },
+      "terrain_profile": {
+        "label": "Su che terreno corri di solito?"
+      },
+      "sample_mountain_route_id": {
+        "label": "Scegli un percorso tipo di montagna",
+        "help": "Nelle tue attività non vediamo uscite con più di 300 m D+. Carica un GPX o genera un percorso di esempio."
+      }
+    },
+    "cta": {
+      "upload": "Carica GPX",
+      "generate": "Genera percorso"
+    },
+    "terrain": {
+      "flat_urban": "Pianura / urbano",
+      "rolling_hills": "Colline / mosso",
+      "mountain": "Montagna"
+    }
+  },
+  "season": {
+    "title": "La mia stagione",
+    "loading": "Carico la stagione...",
+    "days_to_go": "-{n} giorni",
+    "race_day": "Si corre!",
+    "report_available": "Report disponibile",
+    "empty": "Nessuna gara in programma. Crea un piano di allenamento per iniziare.",
+    "status": {
+      "draft": "bozza",
+      "active": "in corso",
+      "completed": "conclusa"
+    }
+  },
+  "planOverview": {
+    "title": "Panoramica del piano",
+    "bar_title": "Settimana {n}: {theme} — {status}",
+    "upcoming": "in arrivo",
+    "week_short": "S{n}"
+  },
+  "achievements": {
+    "new_count": "{n} nuovo traguardo | {n} nuovi traguardi",
+    "title": "Nuovi traguardi",
+    "mark_all": "Segna tutti come letti",
+    "just_now": "Adesso",
+    "min_ago": "{n} min fa",
+    "h_ago": "{n} h fa",
+    "d_ago": "{n} g fa"
+  },
+  "common": {
+    "version": "Versione 0.0.1 (Beta)",
+    "loading": "Caricamento…",
+    "buttons": {
+      "logout": "Esci",
+      "plan": "Pianifica",
+      "create_plan": "Crea il piano gara",
+      "how_it_works": "Come funziona",
+      "about": "Chi sono",
+      "close": "Chiudi",
+      "sign_in": "Accedi",
+      "cancel": "Annulla",
+      "save": "Salva",
+      "delete": "Elimina",
+      "retry": "Riprova",
+      "back": "Indietro"
+    }
+  },
+  "home": {
+    "hero": {
+      "title_line1": "Ogni salita ha il suo passo.",
+      "title_line2": "Trova il tuo.",
+      "subtitle": "Carica il GPX della tua gara. PaceMind studia le tue uscite su Strava e ti consegna la tabella di marcia, salita per salita. Poi il coach AI resta con te fino al traguardo.",
+      "cta_primary": "Inizia gratis",
+      "cta_demo": "Simula l'UTMB →",
+      "cta_secondary": "Vedi i prezzi",
+      "stats": "{count} gare pianificate questo mese."
+    },
+    "features": {
+      "title": "Parti con un piano, arrivi con le gambe.",
+      "subtitle": "Tre cose che quasi nessuno ha alla partenza: una stima onesta del tempo, un piano tratto per tratto e un coach in tasca.",
+      "biometric": {
+        "title": "Tarato su di te",
+        "desc": "PaceMind legge le tue uscite su Strava e capisce come vai in salita, come scendi e quanto cali con la fatica. A ogni attività le stime diventano più precise."
+      },
+      "terrain": {
+        "title": "Pacing che legge il terreno",
+        "desc": "Un 15% su roccia tecnica non è un 15% su sterrato. Teniamo conto di fondo, pendenza e dislivello: il piano segue il percorso che correrai davvero."
+      },
+      "pacing": {
+        "title": "Un coach AI in gara",
+        "desc": "Chiedi quello che vuoi: «dove spingo?», «questa salita la cammino?». Il coach ti risponde in base al tuo piano, al terreno e al meteo."
+      }
+    },
+    "disclaimer": {
+      "badge": "Onesti, per scelta",
+      "title": "Un piano, non una sfera di cristallo.",
+      "text": "PaceMind ti aiuta a costruire una strategia di gara di cui fidarti, dando per scontate condizioni normali e una gara gestita con testa. Meteo, alimentazione e infortuni restano affar tuo: noi ti diamo il piano, la gara la corri tu."
+    }
+  },
+  "predict": {
+    "title": "Nuova simulazione",
+    "upload_card": {
+      "title": "Carica il percorso",
+      "drop_text": "Trascina qui il file GPX",
+      "processing_text": "Leggo la traccia…",
+      "browse_text": "o clicca per sceglierlo",
+      "invalid_file": "Carica un file .gpx valido",
+      "upload_failed": "Caricamento non riuscito"
+    },
+    "instructions": {
+      "title": "Come funziona",
+      "step1": {
+        "title": "Carica il percorso",
+        "desc": "Basta un normale file GPX. Ricaviamo quota, pendenza e distanza."
+      },
+      "step2": {
+        "title": "Simulazione fisica",
+        "desc": "Applichiamo i tuoi parametri, tarati su Strava, al profilo del percorso."
+      },
+      "step3": {
+        "title": "Tabella di marcia",
+        "desc": "Ricevi il tempo stimato e il passo da tenere, tratto per tratto."
+      }
+    },
+    "auth_required": {
+      "title": "Accedi per continuare",
+      "text": "Per stime su misura ci servono i tuoi allenamenti.",
+      "button": "Accedi"
+    },
+    "recent": {
+      "title": "Simulazioni recenti",
+      "loading": "Carico lo storico…",
+      "empty": "Ancora nessuna simulazione."
+    }
+  },
+  "auth_error": {
+    "title": "Accesso non riuscito",
+    "default_message": "Qualcosa è andato storto durante l'accesso.",
+    "no_code": "Strava non ha inviato il codice di autorizzazione.",
+    "exchange_failed": "Non siamo riusciti a completare l'accesso con Strava.",
+    "generic": "Errore: {error}",
+    "cta": "Torna alla home"
+  },
+  "auth_success": {
+    "title": "Accesso riuscito!",
+    "subtitle": "Sei collegato a Strava. Stiamo costruendo il tuo modello.",
+    "note": "Può volerci qualche minuto, dipende da quante attività hai.",
+    "safe_to_leave": "La sincronizzazione va avanti da sola: puoi chiudere la pagina o il browser.",
+    "status_label": "Stato",
+    "preparing": "Preparo la sincronizzazione…",
+    "activities_downloaded": "{downloaded} / {total} attività scaricate",
+    "completed": "Sincronizzazione completata. Ti riporto alla home…",
+    "failed": "Sincronizzazione non riuscita. Puoi andare avanti, ma le stime saranno meno precise.",
+    "fetch_error": "Non riesco a leggere lo stato della sincronizzazione",
+    "cta_home": "Vai alla home",
+    "cta_refresh": "Aggiorna",
+    "cta_refreshing": "Controllo…",
+    "status_initializing": "Avvio"
+  },
+  "results": {
+    "title": "Tempo stimato",
+    "confidence_interval": "Forbice di tempo",
+    "km": "km",
+    "m_gain": "m D+",
+    "flat_pace": "passo in piano",
+    "buttons": {
+      "export_vp": "Esporta Virtual Partner (GPX)",
+      "save_annotations": "Salva modifiche"
+    },
+    "annotations_title": "Note e tratti selezionati",
+    "add_annotation": "Aggiungi nota",
+    "add_annotation_at": "Aggiungi nota al km {distance}",
+    "edit_annotation": "Modifica",
+    "selected_range": "Tratto selezionato",
+    "time": "Tempo",
+    "running_time": "in movimento",
+    "stop_time": "soste",
+    "moving_plus_stops": "In movimento {moving} + soste {stops}",
+    "accuracy": "Sulle tue ultime {n} uscite, le previsioni sono state entro ±{pct}% 8 volte su 10",
+    "accuracy_unknown": "Storico ancora insufficiente per misurarne l'accuratezza",
+    "elevation_pace_title": "Altimetria e passo",
+    "interactive_analysis": "Analisi interattiva",
+    "granularity": "Dettaglio",
+    "reset_zoom": "Reimposta zoom",
+    "similar_activities": "Uscite simili",
+    "actual_time": "reale",
+    "click_to_add": "Clicca sull'altimetria qui sotto per aggiungere ristori o altri punti.",
+    "show_map": "Mostra mappa",
+    "hide_map": "Nascondi mappa",
+    "loading_map": "Carico la mappa…",
+    "loading_profile": "Carico l'altimetria…",
+    "annotations_saved": "Note salvate!",
+    "annotations_save_failed": "Non sono riuscito a salvare le note",
+    "export_failed": "Non sono riuscito a esportare il Virtual Partner",
+    "habits_on": "Include le tue abitudini: sulle tue uscite passate sbagliano meno del modello calibrato.",
+    "habits_off": "Modello calibrato sulle tue uscite. Le tue abitudini entrano quando dimostrano di sbagliare meno."
+  },
+  "profile": {
+    "distance": "Distanza",
+    "elevation": "Quota",
+    "pace": "Passo",
+    "slope": "Pendenza",
+    "segment": "Tratto",
+    "mean_slope": "Pendenza media",
+    "elevation_range": "Quote",
+    "axis_distance": "Distanza (km)",
+    "axis_elevation": "Quota (m)",
+    "axis_elevation_short": "Quota (m)",
+    "select_area": "Seleziona un tratto",
+    "clear_selection": "Annulla selezione"
+  },
+  "activity_selector": {
+    "title": "Scegli l'uscita di riferimento",
+    "intro": "Scegli un'uscita recente per tarare il tuo passo. Quelle simili al percorso sono consigliate.",
+    "loading": "Carico le attività…",
+    "match": "{pct}% simile",
+    "select": "Scegli"
+  },
+  "prediction": {
+    "title": "Stima del tempo gara",
+    "trend": {
+      "title": "Tempo finale stimato",
+      "empty": "Ancora nessuno storico. Le stime verranno salvate man mano che ti alleni.",
+      "tooltip": "Stima"
+    },
+    "subtitle": "Il tuo tempo stimato per",
+    "effort": "Sforzo",
+    "efforts": {
+      "race": "Gara",
+      "training": "Allenamento",
+      "recovery": "Recupero"
+    },
+    "effort_descriptions": {
+      "race": "Ritmo gara, a tutta",
+      "training": "Ritmo da allenamento",
+      "recovery": "Ritmo blando, da scarico"
+    },
+    "retry": "Ricalcola",
+    "loading": {
+      "title": "Calcolo la stima…",
+      "subtitle": "Analizzo il percorso tratto per tratto",
+      "step1": "Trasformo il GPX in profilo",
+      "step2": "Lancio il modello ibrido",
+      "step3": "Divido la gara in tratti",
+      "wait": "Ci vogliono dai 5 ai 30 secondi, dipende dal percorso"
+    },
+    "empty": "Nessuna stima. Clicca su Ricalcola per partire.",
+    "back_home": "← Torna alla home",
+    "tiers": {
+      "TIER_1_PHYSICS": "Fisica di base",
+      "TIER_2_PARAMETER_LEARNING": "Fisica su misura",
+      "TIER_3_RESIDUAL_ML": "Fisica + le tue abitudini"
+    },
+    "aid_stops": {
+      "title": "Soste ai ristori",
+      "count": "Numero di ristori",
+      "minutes_each": "Minuti per ristoro",
+      "hint": "Le soste brevi le ricaviamo già dalle tue uscite: qui aggiungi solo il tempo ai ristori."
+    },
+    "effort_hr": "Sforzo preso dal tuo cuore: {hr_low}–{hr_high} bpm",
+    "target_hr": {
+      "label": "FC target",
+      "reset": "Torna allo sforzo standard",
+      "best": "Il massimo che hai tenuto per almeno {hours} h: circa {hr} bpm ({name}).",
+      "verdict": {
+        "easy": {
+          "title": "Ritmo comodo",
+          "text": "A {hr} bpm per questa durata hai margine: nelle gare così lunghe di solito tieni circa {race_hr} bpm."
+        },
+        "sustainable": {
+          "title": "Passo gestibile per te",
+          "text": "{hr} bpm è in linea con come corri le gare di questa durata (circa {race_hr} bpm)."
+        },
+        "hard": {
+          "title": "Guarda che così è dura",
+          "text": "{hr} bpm è sopra il tuo solito ritmo gara (circa {race_hr} bpm). Si può fare se sei in gran forma, ma occhio al calo nel finale."
+        },
+        "too_hard": {
+          "title": "Troppo duro per questa durata",
+          "text": "Tenere {hr} bpm per tutta la gara è oltre quello che hai mai dimostrato: rischi di saltare. Nelle gare così lunghe di solito tieni circa {race_hr} bpm."
+        }
+      }
+    }
+  },
+  "app": {
+    "athlete": "Atleta",
+    "methodology": "Metodologia",
+    "privacy": "Privacy",
+    "copyright": "© 2026 PaceMind. Fatto per la montagna."
+  },
+  "nav": {
+    "about": "Chi sono",
+    "back_home": "← Torna alla home",
+    "methodology": "Metodologia",
+    "pricing": "Prezzi",
+    "plan": "Pianifica",
+    "races": "Gare",
+    "calendar": "Calendario",
+    "routes": "Percorsi",
+    "my_race": "La mia gara",
+    "my_season": "La mia stagione",
+    "toggle_menu": "Apri o chiudi il menu"
+  },
+  "pricing": {
+    "badge": "Prezzi",
+    "suffix": {
+      "month": "/mese",
+      "year": "/anno",
+      "week_pass": "/ 7 gg"
+    },
+    "upgrade": {
+      "monthly_name": "Premium mensile",
+      "monthly_desc": "15 chat AI al giorno, 5 piani al mese, terreno, meteo, pacing",
+      "yearly_name": "Premium annuale",
+      "yearly_desc": "Tutto il mensile, con un solo addebito all'anno",
+      "save": "Risparmi il 27%",
+      "pass_desc": "Accesso completo per 7 giorni, perfetto per la settimana della gara",
+      "includes": "Con Premium hai:",
+      "feat_ai": "15 chat al giorno con il coach AI, 5 piani di allenamento al mese",
+      "feat_terrain": "Analisi del terreno da OSM (fondo e difficoltà del sentiero)",
+      "feat_weather": "Stime che tengono conto del meteo e previsioni per il giorno gara",
+      "feat_brief": "Briefing di gara, strategia di pacing, piano di alimentazione",
+      "feat_ml": "Stime potenziate dal ML (livelli 2 e 3)",
+      "processing": "Un attimo…",
+      "checkout": "Vai al pagamento",
+      "cancel_anytime": "Disdici quando vuoi",
+      "money_back": "Rimborso entro 7 giorni",
+      "see_pricing": "Vedi tutti i prezzi",
+      "default": {
+        "headline": "Sblocca PaceMind Premium",
+        "subline": "Più spazio con il coach AI, piani che tengono conto del meteo, analisi del terreno e report post-gara."
+      },
+      "features": {
+        "race_report": {
+          "headline": "Sblocca il report post-gara",
+          "subline": "Confronta i passaggi stimati con quelli reali, scopri dove hai spinto troppo e ricevi consigli AI per la prossima volta."
+        },
+        "plan_compliance": {
+          "headline": "Guarda quanto rispetti il piano",
+          "subline": "Scopri come ogni allenamento si confronta con il piano: punteggio di aderenza, scostamenti settimanali, forma e fatica."
+        },
+        "weather_forecast": {
+          "headline": "Corri con il meteo dalla tua parte",
+          "subline": "Previsioni ora per ora sul percorso, indici di vento e caldo, consigli sul materiale per il giorno gara."
+        },
+        "terrain": {
+          "headline": "Regola il ritmo sul terreno, non sul profilo",
+          "subline": "Tipo di fondo (ghiaia, roccia, fango) e difficoltà del sentiero entrano in ogni stima."
+        },
+        "agent": {
+          "headline": "Coach AI Premium",
+          "subline": "15 chat al giorno con il coach e 5 piani di allenamento completi al mese: pacing, alimentazione, materiale, strategia."
+        }
+      }
+    },
+    "title": "Prezzi chiari, zero sorprese.",
+    "subtitle": "Parti gratis. Passa a Premium quando vuoi il coach AI, i report di gara, il meteo e l'analisi del terreno.",
+    "billing": {
+      "monthly": "Mensile",
+      "yearly": "Annuale",
+      "save": "risparmi il 27%"
+    },
+    "plans": {
+      "free": {
+        "name": "Free",
+        "tagline": "Scopri come ragiona PaceMind.",
+        "features": [
+          "1 stima gara al mese",
+          "3 messaggi al coach AI al giorno",
+          "Sync con Strava e modello fisico di base",
+          "Supporto dalla community"
+        ],
+        "cta": "Inizia gratis"
+      },
+      "premium": {
+        "name": "Premium",
+        "tagline": "Tutto quello che serve per la tua gara A.",
+        "badge": "Il più scelto",
+        "monthly_note": "Addebito mensile. Disdici quando vuoi.",
+        "yearly_note": "$79 all'anno: risparmi il 27%.",
+        "features": [
+          "15 messaggi al coach AI al giorno, 5 piani al mese",
+          "Fisica su misura + correzione ML",
+          "Report post-gara (parziali stimati vs reali)",
+          "Piani che tengono conto del meteo, con previsioni",
+          "Analisi del terreno e del fondo",
+          "Monitoraggio della tabella di allenamento",
+          "Scheda gara in PDF ed export GPX"
+        ],
+        "cta": "Prova 7 giorni"
+      },
+      "race_pass": {
+        "name": "Race Day Pass",
+        "tagline": "Una gara, tutto sbloccato. Nessun abbonamento.",
+        "features": [
+          "Tutto Premium per 7 giorni",
+          "Perfetto per la settimana della gara obiettivo",
+          "Pagamento unico"
+        ],
+        "cta": "Acquista il pass"
+      }
+    },
+    "coach": {
+      "badge": "In arrivo",
+      "title": "Piano Coach & Team",
+      "description": "Segui fino a 10 atleti da un'unica dashboard. Schede gara col tuo marchio, export CSV, piani di pacing per tutto il gruppo. Lasciaci la mail: ti scriviamo appena è pronto.",
+      "email_placeholder": "coach{'@'}email.com",
+      "cta": "Avvisami",
+      "joined": "Sei in lista"
+    },
+    "faq": {
+      "title": "Domande frequenti",
+      "items": [
+        {
+          "q": "Posso disdire quando voglio?",
+          "a": "Sì. Disdici dal tuo profilo e resti Premium fino alla fine del periodo già pagato."
+        },
+        {
+          "q": "Mi serve un account Strava?",
+          "a": "Sì: PaceMind si tara sulle tue corse. Colleghi Strava una volta e il profilo si aggiorna da solo."
+        },
+        {
+          "q": "I miei dati vengono venduti o condivisi?",
+          "a": "No. I tuoi dati Strava servono solo a personalizzare le tue stime. Non li usiamo per addestrare modelli condivisi."
+        },
+        {
+          "q": "Che differenza c'è tra Premium e Race Day Pass?",
+          "a": "Premium è un abbonamento (15 chat AI al giorno, 5 piani al mese). Il Race Day Pass ti dà Premium per 7 giorni (8 chat al giorno, 2 piani): ideale se ti serve solo per la settimana della gara."
+        },
+        {
+          "q": "Posso avere un rimborso?",
+          "a": "Sì, entro 7 giorni dal primo abbonamento Premium. Scrivici e ti rimborsiamo, senza domande."
+        }
+      ]
+    }
+  },
+  "privacy": {
+    "badge": "Privacy",
+    "title": "Privacy e dati",
+    "body1": "PaceMind usa i dati Strava solo per costruire il tuo modello e rendere le stime più precise. Non vendo né cedo a terzi i tuoi dati personali.",
+    "body2": "Puoi scollegare Strava quando vuoi. Se mi chiedi di cancellare i tuoi dati, elimino il profilo e le simulazioni salvate.",
+    "body3": "Il prodotto è in beta. Per qualsiasi dubbio su come tratto i dati, scrivimi: ti rispondo io.",
+    "contact_link": "Scrivimi dalla pagina Chi sono"
+  },
+  "howitworks": {
+    "badge": "Come funziona",
+    "title": "Come funziona PaceMind",
+    "subtitle": "Un modello fisico che impara dai tuoi dati per capire come corri davvero sui sentieri.",
+    "tiers": {
+      "title": "Impara un po' alla volta",
+      "intro": "Più attività ci dai, più le stime diventano precise. Man mano che conosce il tuo modo di correre, il sistema sale da solo di livello: sono tre.",
+      "tier1": {
+        "title": "Fisica di base",
+        "activities": "0-4 attività",
+        "text": "Stima il passo dalla pendenza con principi di biomeccanica. Calcola come cresce il costo energetico quando il sentiero si impenna e distingue la salita (dove comanda il motore) dalla discesa (dove comanda la tecnica)."
+      },
+      "tier2": {
+        "title": "Fisica su misura",
+        "activities": "5+ attività",
+        "text": "Impara come corri tu. Regola i parametri del modello sui tuoi dati reali: quanto sei efficiente in salita, come scendi e quanto la fatica ti rallenta col passare dei chilometri."
+      },
+      "tier3": {
+        "title": "Fisica + le tue abitudini",
+        "activities": "30+ attività",
+        "text": "Alla fisica su misura aggiunge le tue abitudini, imparate tratto per tratto: come vai sulle salite ripide, come scendi, quanto cali nel finale. Si attiva solo se, sulle tue uscite passate, sbaglia meno della fisica su misura."
+      }
+    },
+    "learning": {
+      "title": "Cosa impariamo dai tuoi dati",
+      "uphill": {
+        "title": "Efficienza in salita",
+        "text": "Come vai in salita rispetto al runner medio. C'è chi nasce scalatore e chi rende meglio in piano."
+      },
+      "downhill": {
+        "title": "Tecnica in discesa",
+        "text": "Quanto sei veloce e sicuro in discesa. Tecnica e propensione al rischio cambiano tantissimo da runner a runner."
+      },
+      "fatigue": {
+        "title": "Tenuta alla fatica",
+        "text": "Quanto cala il tuo passo con l'accumularsi di chilometri e dislivello. Fondamentale per stimare un'ultra."
+      },
+      "baseline": {
+        "title": "Passo di base",
+        "text": "Il tuo passo in piano, il riferimento di tutte le stime. Tutto il resto si calcola a partire da qui."
+      }
+    },
+    "physics": {
+      "title": "Le basi fisiche",
+      "text": "Il cuore del modello poggia sulla ricerca in biomeccanica. In salita il costo energetico cresce in modo esponenziale con la pendenza. In discesa il limite è la tecnica: la gravità ti spinge, ma frenata e appoggio del piede diventano il collo di bottiglia. Modelliamo anche la fatica eccentrica: le discese danneggiano i muscoli un po' alla volta e ti fanno pagare il conto nei tratti successivi.",
+      "chart_placeholder": "Grafico passo/pendenza (in arrivo)"
+    },
+    "effort": {
+      "title": "Livello di sforzo",
+      "intro": "La stima cambia in base allo sforzo che hai in mente. La forbice di tempo si sposta se sei in gara, in allenamento o in recupero.",
+      "race": {
+        "title": "Gara",
+        "text": "Ritmo a tutta, condizioni ideali"
+      },
+      "training": {
+        "title": "Allenamento",
+        "text": "Ritmo realistico, condizioni normali"
+      },
+      "recovery": {
+        "title": "Recupero",
+        "text": "Ritmo prudente, sforzo blando"
+      }
+    },
+    "privacy": {
+      "title": "I tuoi dati restano tuoi",
+      "text": "Il modello impara solo dai tuoi dati. Niente confronti con altri utenti, niente modelli collettivi. Il tuo profilo esiste solo nel tuo account: nessun altro può vederlo o riceverlo."
+    }
+  },
+  "weather": {
+    "title": "Meteo",
+    "date_label": "Data prevista",
+    "loading": "Carico il meteo…",
+    "error": "Meteo non disponibile",
+    "temperature": "Temp.",
+    "feels_like": "Percepita",
+    "wind": "Vento",
+    "humidity": "Umidità",
+    "precipitation": "Pioggia",
+    "performance_impact": "Impatto",
+    "no_impact": "Nessuno",
+    "sunrise": "Alba",
+    "sunset": "Tramonto",
+    "daylight": "di luce",
+    "hours": "h",
+    "total": "Totale",
+    "incl_forecast": "(previsioni incluse)",
+    "recent_title": "Meteo degli ultimi 5 giorni",
+    "recent_terrain_note": "Il meteo dei giorni scorsi cambia lo stato dei sentieri",
+    "equipment_title": "Cosa portare",
+    "headlamp_warning": "Porta la frontale: poche ore di luce",
+    "equip": {
+      "shoes": "Scarpe",
+      "shoes_trail": "Scarpe da trail",
+      "shoes_grip": "Scarpe da trail con buon grip",
+      "shoes_waterproof": "Scarpe da trail impermeabili",
+      "clothing": "Abbigliamento",
+      "clothing_thermal": "Primo strato termico, piumino, pantaloni, guanti, berretto",
+      "clothing_layers": "Maglia a maniche lunghe, giacca leggera, pantaloni lunghi o gambali",
+      "clothing_light": "Maglia a maniche corte o lunga leggera, manicotti se serve",
+      "clothing_minimal": "Canotta o maglia leggera, pantaloncini",
+      "rain": "Pioggia",
+      "rain_waterproof": "Giacca impermeabile indispensabile",
+      "rain_packable": "Antipioggia leggero da tenere nello zaino",
+      "headlamp": "Frontale",
+      "headlamp_recommended": "Consigliata (poche ore di luce)",
+      "hydration": "Idratazione",
+      "hydration_rate": "~{rate} ml/ora consigliati",
+      "sun": "Sole",
+      "sun_protect": "Crema solare, cappellino, occhiali da sole",
+      "wind": "Vento",
+      "wind_jacket": "Giacca o gilet antivento"
+    }
+  },
+  "about": {
+    "badge": "Chi sono",
+    "title": "Edoardo Gabrielli",
+    "subtitle": "Trail runner, sviluppatore e fisico.",
+    "body1": "Corro sui sentieri da amatore, scrivo software e ho una laurea in fisica. Qui uso modelli e analisi dei dati per trasformare una traccia GPX in indicazioni concrete per preparare la gara.",
+    "body2": "Ho creato PaceMind perché gli strumenti per pianificare una gara non mi bastavano. Ora voglio condividerlo con chi corre.",
+    "image_alt": "Ritratto di Edoardo Gabrielli",
+    "personal_title": "Nato nei miei lunghi, pensato per i tuoi.",
+    "personal_text": "Era uno strumento che usavo io per gare e lunghi. Poi è cresciuto per aiutare anche altri atleti, con la stessa onestà e la stessa precisione.",
+    "contact_label": "Contatti",
+    "contact_email": "dodogabrie97{'@'}live.it",
+    "contact_strava": "Strava"
+  },
+  "demo": {
+    "title": "Demo PaceMind",
+    "badge": "DEMO · SENZA ACCESSO",
+    "course_meta": "~170 km · 10 000 m D+ · percorso di esempio",
+    "selected": "selezionato",
+    "failed": "La demo non è andata. Riprova più tardi.",
+    "try_card": {
+      "title": "Quanto ci metti all'UTMB?",
+      "description": "Abbiamo già caricato una traccia GPX di esempio dell'UTMB Pyramides. Premi il pulsante e guarda il modello fisico al lavoro: niente accesso a Strava, niente upload.",
+      "button": "Calcola il tempo",
+      "predicting": "Sto calcolando…"
+    },
+    "what_you_get": {
+      "title": "Cosa ottieni",
+      "item_total_time": "Il tempo totale stimato",
+      "item_ci": "Una forbice di tempo onesta, non un numero magico",
+      "item_segments": "Il passo per ogni tratto da 50 m",
+      "item_map": "Mappa e altimetria del percorso",
+      "disclaimer": "La demo usa parametri standard, non tarati su di te. Collega Strava dalla pagina Pianifica per stime più precise e personali."
+    },
+    "results": {
+      "total_time": "Tempo totale",
+      "ci": "Forbice di tempo",
+      "tier": "Metodo",
+      "map": "Mappa del percorso",
+      "elevation": "Altimetria",
+      "run_again": "← Rifai la demo"
+    },
+    "cta_banner": {
+      "title": "La vuoi per la tua gara?",
+      "description": "Collega Strava e carica il tuo GPX: avrai un piano tarato su di te, tratto per tratto.",
+      "button": "Crea il mio piano"
+    }
+  },
+  "races": {
+    "title": "Calendario gare",
+    "subtitle": "Trova la tua prossima gara A, B o C. Filtra per data, distanza, dislivello e distanza da casa. Aggiungi una gara ai tuoi piani e PaceMind ti prepara un blocco di allenamento su misura.",
+    "loading": "Carico le gare…",
+    "found": "{n} gare",
+    "empty": "Nessuna gara con questi filtri. Allarga le date o la distanza.",
+    "fitScore": "affinità",
+    "viewList": "Lista",
+    "viewMap": "Mappa",
+    "filters": {
+      "title": "Filtri",
+      "reset": "Azzera",
+      "search": "Cerca",
+      "searchPlaceholder": "Nome gara, città…",
+      "from": "Dal",
+      "to": "Al",
+      "any": "Tutti",
+      "country": "Paese",
+      "distance": "Distanza (km)",
+      "elevation": "Dislivello (m)",
+      "min": "Min",
+      "max": "Max",
+      "surface": "Fondo",
+      "type": "Tipo di gara",
+      "nearMe": "Vicino a casa",
+      "fromBase": "da casa",
+      "maxTravelKm": "Raggio (km)",
+      "sort": "Ordina per"
+    },
+    "surface": {
+      "asphalt": "Asfalto",
+      "trail": "Trail",
+      "mixed": "Misto"
+    },
+    "type": {
+      "road": "Strada",
+      "trail": "Trail",
+      "ultra": "Ultra",
+      "vertical": "Vertical"
+    },
+    "sort": {
+      "date": "Data",
+      "distance": "Distanza",
+      "fitScore": "Più adatte (vicine)"
+    },
+    "detail": {
+      "addAs": "Aggiungi come",
+      "addingAs": "Aggiungo come {priority}…",
+      "addAsAExplain": "A = gara obiettivo. PaceMind prepara un piano di 12 settimane con scarico completo.",
+      "addAsBExplain": "B = gara di preparazione. PaceMind riserva 6 settimane per rifinire la forma.",
+      "addAsCExplain": "C = gara allenante. 3 settimane leggere, senza scarico.",
+      "addedSuccess": "Gara aggiunta ai tuoi piani.",
+      "openPlan": "Apri il piano",
+      "officialUrl": "Sito ufficiale",
+      "back": "Torna al calendario",
+      "itra_points": "{n} punti",
+      "dateEstimated": "data stimata dalle edizioni passate",
+      "downloadGpx": "Scarica il tracciato GPX",
+      "poster": "Locandina"
+    },
+    "discover": "Non la trovi? Cercala online",
+    "discovering": "Cerco sul web: sito, locandina e tracciato…",
+    "discoverNone": "Online non ho trovato niente su «{q}». Prova ad aggiungere il paese o l'anno.",
+    "discoverLogin": "Accedi per cercare una gara online."
+  },
+  "race_header": {
+    "countdown": "Oggi si corre! | Manca 1 giorno | Mancano {n} giorni",
+    "predicted": "Stima",
+    "compliance": "Aderenza",
+    "fitness": "Forma",
+    "status": {
+      "very_fresh": "Freschissimo",
+      "fresh": "Fresco",
+      "neutral": "Neutro",
+      "fatigued": "Affaticato",
+      "very_fatigued": "Molto affaticato"
+    }
+  },
+  "routes": {
+    "download_gpx": "Scarica GPX",
+    "my_routes": "I miei percorsi",
+    "search": "Cerca percorsi…",
+    "empty": "Ancora nessun percorso",
+    "sort": {
+      "recent": "Recenti",
+      "distance_asc": "Più corti",
+      "distance_desc": "Più lunghi",
+      "elevation_desc": "Dislivello",
+      "difficulty": "Difficoltà",
+      "name": "Nome"
+    },
+    "difficulty": {
+      "easy": "Facile",
+      "moderate": "Medio",
+      "hard": "Duro",
+      "extreme": "Estremo"
+    },
+    "source": {
+      "strava": "Strava",
+      "generated": "Generato",
+      "imported": "Importato"
+    },
+    "terrain": {
+      "road": "Asfalto",
+      "gravel": "Sterrato",
+      "trail": "Sentiero",
+      "technical": "Tecnico",
+      "mud": "Fango",
+      "unknown": "Sconosciuto"
+    },
+    "stats": {
+      "distance": "Distanza",
+      "gain": "D+",
+      "loss": "D-",
+      "terrain": "Terreno",
+      "tags": "Tag"
+    },
+    "favorite": "Preferito",
+    "delete": "Elimina percorso",
+    "confirm_delete": "Vuoi eliminare questo percorso?",
+    "show_list": "Mostra percorsi",
+    "new_route": "+ Nuovo percorso",
+    "undo": "Annulla (Ctrl+Z)",
+    "redo": "Ripeti (Ctrl+Y)",
+    "hint_draw": "Tocca la mappa per aggiungere i punti. Il percorso segue i sentieri veri.",
+    "hint_loop": "Tocca la mappa per scegliere partenza e arrivo.",
+    "location": {
+      "set": "Imposta la tua zona",
+      "hint": "Imposta la zona dove ti alleni per generare percorsi vicini.",
+      "search": "Cerca un luogo…",
+      "save": "Salva zona"
+    },
+    "map": {
+      "topo": "Topo",
+      "street": "Stradale",
+      "topo_title": "OpenTopoMap - con le curve di livello",
+      "street_title": "OpenStreetMap - vista dettagliata",
+      "training_base": "La tua zona"
+    },
+    "compass": {
+      "N": "N",
+      "NE": "NE",
+      "E": "E",
+      "SE": "SE",
+      "S": "S",
+      "SW": "SO",
+      "W": "O",
+      "NW": "NO"
+    },
+    "browser": {
+      "title": "Scegli il percorso",
+      "search": "Cerca per nome…",
+      "min_km": "Km min",
+      "max_km": "Km max",
+      "min_gain": "D+ min",
+      "max_gain": "D+ max",
+      "filter": "Filtra",
+      "no_match": "Nessun percorso con questi filtri.",
+      "select": "Scegli",
+      "pick_preview": "Scegli un percorso per l'anteprima",
+      "loading_map": "Carico la mappa…"
+    },
+    "create": {
+      "title": "Nuovo percorso",
+      "tabs": {
+        "draw": "Disegna",
+        "loop": "Anello auto",
+        "frequent": "Abituali",
+        "import": "Importa"
+      },
+      "types": {
+        "loop": "Anello",
+        "out_and_back": "Andata e ritorno"
+      },
+      "name": "Nome del percorso",
+      "name_placeholder_draw": "Il mio percorso",
+      "name_placeholder_loop": "Il mio anello",
+      "waypoints": "Punti ({n})",
+      "waypoints_hint": "Tocca la mappa per aggiungere i punti.",
+      "close_loop": "Chiudi l'anello (torna alla partenza)",
+      "clear_waypoints": "Cancella tutti i punti",
+      "start_point": "Partenza",
+      "start_hint": "Tocca la mappa per scegliere la partenza.",
+      "route_type": "Tipo di percorso",
+      "target_distance": "Distanza obiettivo (km)",
+      "target_gain": "D+ obiettivo (m, facoltativo)",
+      "direction": "Direzione preferita",
+      "direction_hint": "Tocca per scegliere (se vuoto, automatica)",
+      "clear": "azzera",
+      "generate": "Genera percorso",
+      "generating": "Lo sto generando…",
+      "attempt": "Tentativo {n} / {max}",
+      "error_pct": "(scarto {pct})",
+      "frequent_intro": "Percorsi che hai corso più di una volta, ricavati dalle attività importate. Nessuna chiamata a ORS.",
+      "frequent_loading": "Analizzo le tue attività…",
+      "frequent_empty": "Ancora nessun percorso ricorrente. Importa più attività dal tuo storico.",
+      "last_run": "ultima: {date}",
+      "import_intro": "Importa un percorso da un'attività Strava.",
+      "strava_id": "ID attività Strava",
+      "strava_id_placeholder": "es. 12345678",
+      "name_optional": "Nome del percorso (facoltativo)",
+      "name_from_activity": "Usa il nome dell'attività",
+      "import": "Importa da Strava",
+      "importing": "Importo…",
+      "preview": "Anteprima percorso",
+      "routing": "Calcolo il tracciato…",
+      "saved": "Percorso salvato!",
+      "done": "Fatto",
+      "save": "Salva percorso",
+      "saving": "Salvo…",
+      "custom_route": "Percorso personalizzato"
+    }
+  },
+  "notifications": {
+    "title": "Notifiche",
+    "unread": "Nessuna notifica da leggere | 1 notifica da leggere | {n} notifiche da leggere",
+    "mark_all": "Segna tutte come lette",
+    "empty": "Ancora nessuna notifica.",
+    "just_now": "adesso",
+    "minutes_ago": "{n} min fa",
+    "hours_ago": "{n} h fa",
+    "days_ago": "{n} gg fa"
+  },
+  "annotations": {
+    "add_title": "Aggiungi nota",
+    "edit_title": "Modifica nota",
+    "subtitle": "Punto sul percorso",
+    "location": "Posizione",
+    "eta": "Passaggio stimato",
+    "type": "Tipo",
+    "types": {
+      "aid_station": "Ristoro",
+      "water": "Acqua",
+      "checkpoint": "Checkpoint",
+      "caution": "Attenzione",
+      "generic": "Altro"
+    },
+    "add_details": "Aggiungi dettagli",
+    "hide_details": "Nascondi dettagli",
+    "label": "Etichetta",
+    "label_placeholder": "Scrivi l'etichetta…",
+    "label_hint": "Formato: Testo - HH:MM:SS (l'orario è il passaggio stimato)",
+    "stop_time": "Sosta",
+    "seconds": "secondi",
+    "stop_hint": "Tempo che passi qui fermo (si somma al tempo stimato)",
+    "label_required": "Scrivi un'etichetta"
+  },
+  "auth": {
+    "gate": {
+      "title": "Accedi per continuare",
+      "text": "Questa sezione lavora sui tuoi allenamenti, quindi serve un account.",
+      "error": "Non riesco ad avviare l'accesso con Strava. Riprova."
+    },
+    "session_expired": {
+      "title": "Sessione scaduta",
+      "text": "La sessione è scaduta. Accedi di nuovo e riparti da dove eri: non hai perso niente."
+    },
+    "calendar": {
+      "title": "Accedi per vedere il calendario",
+      "text": "Il calendario nasce dai tuoi allenamenti e dalle gare che hai in programma. Accedi per crearne uno."
+    },
+    "routes": {
+      "title": "Accedi per usare i percorsi",
+      "text": "I percorsi vengono salvati nel tuo account e legati alla zona in cui ti alleni: per usarli devi accedere."
+    },
+    "signin": {
+      "email_label": "Email",
+      "email_placeholder": "tu{'@'}esempio.com",
+      "submit": "Inviami il link",
+      "sending": "Invio…",
+      "invalid_email": "Inserisci un'email valida.",
+      "sent_title": "Controlla la posta",
+      "sent_text": "Se esiste un account per {email}, il link di accesso sta arrivando. Scade tra 15 minuti.",
+      "sent_toast": "Link inviato. Controlla la posta.",
+      "resend": "Usa un'altra email",
+      "error": "Non riesco a inviare il link. Riprova.",
+      "or": "oppure",
+      "strava": "Continua con Strava",
+      "required": "Accedi per continuare.",
+      "dialog_label": "Accedi a PaceMind"
+    },
+    "connections": {
+      "title": "Account collegati",
+      "text": "Importa le tue attività da una piattaforma di allenamento. Puoi scollegarla quando vuoi: le attività già importate restano.",
+      "connected": "Collegato",
+      "not_connected": "Non collegato",
+      "connect": "Collega",
+      "connecting": "Collego…",
+      "disconnect": "Scollega",
+      "disconnecting": "Scollego…",
+      "disconnect_confirm": "Scollegare {provider}? Le attività già importate restano.",
+      "disconnected": "{provider} scollegato.",
+      "error": "Non riesco ad aggiornare il collegamento. Riprova.",
+      "load_error": "Non riesco a caricare gli account collegati.",
+      "already_linked": "Questo account {provider} è già collegato a un altro account PaceMind.",
+      "resync": "Ricarica attività",
+      "resyncing": "Ricarico…"
+    },
+    "empty": {
+      "title": "Ancora nessun dato",
+      "text": "Importa i tuoi allenamenti per sbloccare stime e piani."
+    }
+  },
+  "activity_import": {
+    "title": "Importa i tuoi allenamenti",
+    "text": "Trascina qui l'export completo del tuo orologio o della tua piattaforma. Leggiamo file .fit, .tcx e .gpx, singoli o dentro uno .zip, compresi gli archivi Strava compressi.",
+    "delay_note": "Quasi tutte le piattaforme non ti fanno scaricare l'export subito: te lo mandano via email. Di solito arriva in pochi minuti, ma possono volerci fino a 48 ore. Richiedilo adesso e torna qui quando ti arriva la mail.",
+    "choose_files": "Scegli i file",
+    "drop_text": "…oppure trascina qui l'export",
+    "accepts": "Formati accettati: {formats}, fino a {size} per volta.",
+    "selected": "{count} file pronti · {size}",
+    "and_more": "…e altri {count}",
+    "start": "Importa",
+    "clear": "Annulla",
+    "cancel_import": "Interrompi",
+    "cancelled": "Importazione interrotta.",
+    "phase_upload": "Carico l'export…",
+    "phase_process": "Leggo le tue attività…",
+    "done": "{imported} attività importate, {skipped} saltate.",
+    "done_next": "Ricalibriamo il modello sulle nuove attività: da ora stime e piani ne terranno conto.",
+    "skipped_title": "Mostra i {count} file saltati",
+    "how_title": "Come ottenere l'export",
+    "contents": "Contenuto: {formats}",
+    "open_export_page": "Vai alla pagina di export",
+    "error_type": "\"{name}\" non è un formato supportato. Usa .zip, .fit, .tcx, .gpx o .gz.",
+    "error_size": "Supera {size}. Dividi l'export in parti più piccole, oppure importa solo l'archivio.",
+    "error_upload": "Caricamento non riuscito. Controlla la connessione e riprova: non è stato importato nulla.",
+    "error_cancel": "Impossibile interrompere l'importazione. Riprova.",
+    "cta": "Importa i tuoi allenamenti",
+    "vendors": {
+      "garmin": {
+        "name": "Garmin",
+        "route": "Garmin Connect → Account → Esporta i tuoi dati (richiesta dati GDPR).",
+        "contents": "uno .zip con i file .fit"
+      },
+      "suunto": {
+        "name": "Suunto",
+        "route": "App o account Suunto → esporta i tuoi dati.",
+        "contents": ".fit / .gpx"
+      },
+      "polar": {
+        "name": "Polar",
+        "route": "Polar Flow → Impostazioni → Account → esporta.",
+        "contents": ".tcx / .gpx"
+      },
+      "coros": {
+        "name": "COROS",
+        "route": "App COROS → Profilo → esporta i tuoi dati.",
+        "contents": ".fit / .gpx"
+      },
+      "strava": {
+        "name": "Strava",
+        "route": "Strava → Impostazioni → Il mio account → Scarica o elimina il tuo account → richiedi l'archivio. Funziona anche se Strava è già collegato ed evita i limiti delle API.",
+        "contents": ".fit.gz / .gpx.gz / .tcx.gz più activities.csv"
+      }
+    }
+  },
+  "sync": {
+    "fetching": "Scarico e valuto le tue attività Strava…",
+    "none_found": "Nessuna attività trovata. Ne servono almeno 5 per personalizzare il modello.",
+    "up_to_date": "Nessuna attività nuova. Il modello è aggiornato.",
+    "training_ml": "Addestro il modello ML (livello 3)…",
+    "learning_params": "Imparo i tuoi parametri di corsa…",
+    "training_model": "Addestro il tuo modello personale…",
+    "trained": "Modello addestrato su {a} attività!",
+    "downloading": "Scarico le {a} attività più significative…",
+    "downloaded": "Scaricate {a}/{b} attività…",
+    "reading_export": "Leggo il tuo export…",
+    "importing": "Importate {a} attività…",
+    "import_cancelled": "Import annullato dopo {a} attività.",
+    "imported_skipped": "{a} importate, {b} saltate",
+    "imported": "{a} importate",
+    "failed": "Sincronizzazione non riuscita",
+    "status_failed": "Impossibile leggere lo stato della sincronizzazione"
+  },
+  "activityAnalysis": {
+    "back": "Calendario",
+    "loading": "Carico l'analisi...",
+    "not_found": "Allenamento non trovato.",
+    "no_streams": "Per questa corsa non ci sono i dati secondo per secondo: posso mostrare solo i totali.",
+    "stats": {
+      "distance": "Distanza",
+      "moving": "Tempo in movimento",
+      "elevation": "Dislivello",
+      "pace": "Passo medio",
+      "gap": "GAP {v} /km",
+      "hr": "FC media",
+      "hr_max": "max {v} bpm"
+    },
+    "plan": {
+      "title": "Previsto e fatto",
+      "planned": "Previsto",
+      "done": "Fatto",
+      "distance": "Distanza",
+      "elevation": "Dislivello",
+      "duration": "Durata",
+      "hr_target": "FC obiettivo",
+      "avg": "media {v}",
+      "none": "Nessun allenamento previsto per questo giorno.",
+      "off_plan": "Fuori piano",
+      "on_plan": "Come da piano",
+      "longer": "più lunga del previsto",
+      "shorter": "più corta del previsto",
+      "more_climb": "con molto più dislivello",
+      "less_climb": "con meno dislivello",
+      "hr_high": "FC sopra l'obiettivo",
+      "hr_low": "FC sotto l'obiettivo",
+      "hr_ok": "FC nell'obiettivo",
+      "match": "In linea con il piano",
+      "plan_tag": "{plan} - sett. {week}, {day}",
+      "treadmill": "Tapis roulant: il dislivello misurato non è affidabile."
+    },
+    "zones": {
+      "title": "Zone di frequenza",
+      "names": {
+        "recovery": "Recupero",
+        "easy": "Facile",
+        "tempo": "Medio",
+        "threshold": "Soglia",
+        "interval": "VO2max"
+      },
+      "drift": "Deriva FC: prima metà {a}, seconda metà {b} bpm.",
+      "drift_hilly": "Su un percorso con salite e discese il disaccoppiamento non è indicativo.",
+      "decoupling": "Disaccoppiamento passo/FC: {v}%.",
+      "none": "Nessun dato di frequenza."
+    },
+    "profile": {
+      "title": "Altimetria e frequenza",
+      "alt": "Quota",
+      "hr": "FC",
+      "seg": "Salita / discesa rilevata",
+      "target": "Obiettivo {lo}-{hi}",
+      "treadmill": "Corsa senza quota utile (tapis roulant o indoor)."
+    },
+    "climbs": {
+      "title": "Salite e discese",
+      "climb": "Salita dal km {km}",
+      "descent": "Discesa dal km {km}",
+      "length": "Lunghezza / dislivello",
+      "grade": "Pendenza media",
+      "time": "Tempo / passo",
+      "vam": "VAM",
+      "vert": "Velocità verticale",
+      "hr": "FC media / a fine tratto",
+      "none": "Nessuna salita o discesa significativa."
+    },
+    "idx": {
+      "title": "Indice di miglioramento",
+      "intro": "Scegli un tratto: cerco le corse passate che lo percorrono dallo stesso inizio alla stessa fine e confronto quanta strada fai per ogni battito.",
+      "manual": "Tratto a mano",
+      "start": "Inizio",
+      "end": "Fine",
+      "period": "Periodo",
+      "p180": "Ultimi 6 mesi",
+      "p365": "Ultimo anno",
+      "p1825": "Tutto",
+      "metric": "Confronto",
+      "eff": "A parità di battito",
+      "time": "Solo tempo",
+      "tol": "Tolleranza GPS",
+      "apply": "Calcola",
+      "today_vs": "Oggi rispetto alla mediana",
+      "n_past": "{n} passaggi precedenti",
+      "date": "Data",
+      "time_col": "Tempo",
+      "hr": "FC media",
+      "vam": "VAM",
+      "vert": "Vel. vert.",
+      "mpb": "m per battito",
+      "index": "Indice",
+      "today": "oggi",
+      "pending": "{n} corse più vecchie non hanno ancora il tracciato GPS.",
+      "more": "Controlla altre",
+      "loading": "Cerco il tratto nelle corse passate...",
+      "few": "Servono almeno 3 passaggi precedenti per l'indice: per ora ne ho trovati {n}.",
+      "note": "m per battito = metri equivalenti in piano al minuto, divisi per i battiti sopra il riposo ({rest} bpm). Più alto è, più sei efficiente.",
+      "climb_chip": "Salita km {a}-{b}",
+      "descent_chip": "Discesa km {a}-{b}"
+    },
+    "ai": {
+      "title": "Parlane con il coach",
+      "text": "Apri la chat del sito con questa corsa, oppure copia la richiesta e incollala in Claude o in un altro assistente collegato a PaceMind via MCP.",
+      "prompt": "Analizza la mia corsa del {date} (activity {id}) con get_activity_detail, compare_to_plan e get_segment_improvement: com'è andata rispetto al piano e cosa cambio nei prossimi giorni?",
+      "open": "Apri nella chat",
+      "copy": "Copia per MCP",
+      "copied": "Copiato. Incollalo nel tuo assistente.",
+      "select": "Testo selezionato: premi Ctrl+C."
+    },
+    "splits": {
+      "title": "Parziali al km",
+      "km": "Km",
+      "pace": "Passo",
+      "gap": "GAP",
+      "hr": "FC",
+      "cad": "Cadenza",
+      "dplus": "D+",
+      "dminus": "D-",
+      "grade": "Pend.",
+      "note": "GAP = passo equivalente in piano. Riga evidenziata: il km più lento."
+    }
+  }
+}

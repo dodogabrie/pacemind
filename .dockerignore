@@ -1,0 +1,29 @@
+.git
+.gitignore
+*.md
+LICENSE
+
+# Python
+__pycache__
+*.pyc
+*.pyo
+venv/
+.venv/
+*.egg-info
+
+# Node
+frontend/node_modules
+frontend/.vscode
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+
+# Environment
+.env
+.env.*
+
+# Tests
+tests/
