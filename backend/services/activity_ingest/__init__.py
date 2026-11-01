@@ -219,7 +219,7 @@ class ActivityIngestService:
                                         replace=promoted)
         return existing
 
-    # TODO(multi-source #86 — see GH issues): streams are stored twice (JSON
+    # TODO(multi-source #18 — see GH issues): streams are stored twice (JSON
     # column + this filesystem mirror) with no retention, compression or size
     # policy. Bulk file import removes the old 50-activities-per-sync ceiling,
     # so this is now unbounded per user. Measure per-activity size and decide a

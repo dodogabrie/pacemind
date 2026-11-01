@@ -2939,16 +2939,16 @@ def _training_ratio_for(race_type: str, race_distance_km: float, race_elevation_
     return race_elevation_m / race_distance_km
 
 
-# TODO(coach-review #58 — see GH issues): one-shot generation, no in-flight recalibration.
+# TODO(coach-review #4 — see GH issues): one-shot generation, no in-flight recalibration.
 # generate_plan() is called once at plan creation. There is no service that
 # re-evaluates the remaining weeks from current compliance/TSB/race-result deltas
 # (issues #55, #58, #64). Add plan_adjustment_service.reevaluate_plan(plan_id, anchor_week).
-# TODO(coach-review #63 — see GH issues): no auto tune-up race scaffolding.
+# TODO(coach-review #9 — see GH issues): no auto tune-up race scaffolding.
 # When the target is a 100K/100M, best practice schedules a 50K race ~6-8w out and
 # optionally a 10-21K ~3-4w out. We don't propose them — only validate user-entered
 # races in season_planning_service. Inject suggested races + treat the week as
 # "race-as-long-run" (skip planned LR, 2-3d taper before, 2-3d recovery after).
-# TODO(coach-review #64 — see GH issues): no recalibration from intermediate race results.
+# TODO(coach-review #10 — see GH issues): no recalibration from intermediate race results.
 # After a B-race, observed-vs-predicted delta should damped-Bayesian-update v_flat
 # in UserLearnedParams and re-run the engine on remaining weeks. Today the result
 # is stored in race_results and ignored by future weeks.

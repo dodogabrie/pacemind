@@ -211,7 +211,7 @@ def build_route_from_activity(activity, user_id: int, name: Optional[str] = None
     )
 
 
-# TODO(routes #119 — see GH issues): no refresh on cluster change, no terrain enrichment, imports api._auto_tag.
+# TODO(routes #42 — see GH issues): no refresh on cluster change, no terrain enrichment, imports api._auto_tag.
 def sync_frequent_routes(user_id: int) -> int:
     """Save recurring-route clusters as TrainingRoute(source='frequent').
 

@@ -157,7 +157,7 @@ def _compute_similarity_score(
 # Endpoints
 # ---------------------------------------------------------------------------
 
-# TODO(multi-source #88 — see GH issues): Strava-only list; file-import users get [].
+# TODO(multi-source #20 — see GH issues): Strava-only list; file-import users get [].
 # Imported activities live in the `activities` table but aren't offered here, and
 # save-calibration selects by strava_id. Fix: a source-agnostic GET /api/activities.
 @bp.route('/calibration-activities', methods=['GET'])

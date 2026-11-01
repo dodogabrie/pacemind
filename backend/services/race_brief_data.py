@@ -45,7 +45,7 @@ def build_race_brief(
         else datetime.now(timezone.utc)
     )
 
-    # TODO(pred-review #98 — see GH issues): terrain + weather below are shown
+    # TODO(pred-review #30 — see GH issues): terrain + weather below are shown
     # but not fed to the prediction. Wire them only as factors relative to the
     # user's calibration runs (v_flat already reflects their usual terrain).
     # 1. Terrain

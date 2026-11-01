@@ -2,7 +2,6 @@
 
 **AI pacing coach for trail & ultra racing.** Predict your finish time on any GPX course, calibrate to your Strava history, and race with an AI advisor by your side.
 
-[![CI](https://github.com/dodogabrie/trail_gpx_analyzer/actions/workflows/ci.yml/badge.svg)](https://github.com/dodogabrie/trail_gpx_analyzer/actions/workflows/ci.yml)
 [![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](LICENSE)
 [![Status: Beta](https://img.shields.io/badge/status-beta-orange.svg)]()
 

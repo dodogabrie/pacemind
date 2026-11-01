@@ -7,7 +7,7 @@ from datetime import datetime, timezone
 class RaceResult(db.Model):
     """Stores post-race analysis comparing actual vs predicted performance."""
 
-    # TODO(coach-review #64 — see GH issues): result is stored but never feeds back.
+    # TODO(coach-review #10 — see GH issues): result is stored but never feeds back.
     # Insertion of a RaceResult should trigger recalibration_service: damped-Bayesian
     # update of UserLearnedParams.v_flat (α ≈ 0.3-0.5), then plan_adjustment_service
     # .reevaluate_plan for the active A-race plan. Persist the diff in

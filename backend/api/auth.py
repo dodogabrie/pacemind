@@ -163,7 +163,7 @@ def request_magic_link():
     # Strava-created accounts keep email_verified_at NULL: Strava never
     # verified that address for us, so a magic link must not adopt the account.
     if user is not None and user.email_verified_at is None:
-        # TODO(identity #81 — see GH issues): this locks the user out of email login.
+        # TODO(identity #13 — see GH issues): this locks the user out of email login.
         # users.email is unique, so we can neither adopt the Strava-created row (takeover)
         # nor create a second one. Fix: let a signed-in user verify their address from
         # settings, which sets email_verified_at and unblocks this path.
@@ -175,7 +175,7 @@ def request_magic_link():
             'exp': datetime.now(timezone.utc) + timedelta(minutes=MAGIC_LINK_TTL_MINUTES),
         }
         token = jwt.encode(payload, _magic_link_key(user), algorithm='HS256')
-        # TODO(deploy-review #87 — see GH issues): link is http:// behind the Cloudflare tunnel.
+        # TODO(deploy-review #19 — see GH issues): link is http:// behind the Cloudflare tunnel.
         # url_for takes the scheme from the request; nginx rewrites X-Forwarded-Proto to http
         # and there's no ProxyFix. Fix: build it from FRONTEND_URL/PUBLIC_BASE_URL instead.
         link = url_for('auth.verify_magic_link', token=token, _external=True)
@@ -216,7 +216,7 @@ def verify_magic_link():
         user_repo.create(user)
     elif user.email_verified_at is None:
         # Strava-created account holding this address — see request_magic_link
-        # and TODO(identity #81).
+        # and TODO(identity #13).
         return redirect(f"{frontend_url}/auth-error?error=email_linked_to_strava")
 
     user.last_login = now  # rotates the signing key → the link is now spent

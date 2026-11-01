@@ -36,7 +36,7 @@ from services.data_processor import haversine
 # Tuning surface — the whole point of scripts/calibrate_streams.py
 # ---------------------------------------------------------------------------
 
-# TODO(stream-drift #82 — see GH issues): both windows below are UNCALIBRATED.
+# TODO(stream-drift #14 — see GH issues): both windows below are UNCALIBRATED.
 # There is no ground-truth fixture in the repo (Strava streams + the matching
 # original GPX for the same activity), so they were reasoned from Strava's
 # ~1 Hz sampling rather than measured. Phase 2 of the multi-source epic must

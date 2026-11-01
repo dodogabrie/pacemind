@@ -1,4 +1,4 @@
-<!-- TODO(pred-review #106 — see GH issues): orphaned (no view mounts it, nor ActivitySelector.vue). Delete both with the store calibration-editor state and, if unused, /physics/calibrate + /prediction/save-calibration. -->
+<!-- TODO(pred-review #38 — see GH issues): orphaned (no view mounts it, nor ActivitySelector.vue). Delete both with the store calibration-editor state and, if unused, /physics/calibrate + /prediction/save-calibration. -->
 <template>
   <div class="space-y-6">
     <div class="bg-amber-50 border border-amber-200 rounded p-4">

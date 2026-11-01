@@ -90,9 +90,9 @@
           {{ $t('prediction.target_hr.reset') }}
         </button>
       </div>
-      <!-- TODO(pred-review #102 — see GH issues): pre-race questionnaire (target effort, poles, night hours, heat acclimatisation, taper), each answer mapped to one bounded, validated parameter. -->
+      <!-- TODO(pred-review #34 — see GH issues): pre-race questionnaire (target effort, poles, night hours, heat acclimatisation, taper), each answer mapped to one bounded, validated parameter. -->
 
-      <!-- TODO(pred-review #103 — see GH issues): full aid-station model (per-waypoint minutes, drop bags, sleep for 100-milers). -->
+      <!-- TODO(pred-review #35 — see GH issues): full aid-station model (per-waypoint minutes, drop bags, sleep for 100-milers). -->
       <div class="flex flex-col gap-2">
         <span class="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">{{ $t('prediction.aid_stops.title') }}</span>
         <label class="flex flex-col gap-1 text-sm text-slate-700">

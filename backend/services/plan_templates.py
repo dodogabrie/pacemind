@@ -4,7 +4,7 @@ Each template defines weekly volume progression and workout type distribution.
 The agent customizes distances/paces based on user's fitness and race profile.
 """
 
-# TODO(coach-review #62 — see GH issues): library is thin (~10 generic templates).
+# TODO(coach-review #8 — see GH issues): library is thin (~10 generic templates).
 # Competitors advertise 500+ named coach-authored plans. Expand to 50-100 named
 # archetypes (Pfitzinger 18/55, Hanson Beginner, Daniels 2Q, Koop 100mi, Vert.run
 # CCC, Uphill Athlete Big Mountain) with author + methodology_ref + target_population.

@@ -173,7 +173,7 @@ class TrainingLoadService:
         activities: List[Activity],
         as_of_date: datetime
     ) -> Dict[int, float]:
-        # TODO(coach-review #56 — see GH issues): no HRV ingestion (autonomic readiness).
+        # TODO(coach-review #2 — see GH issues): no HRV ingestion (autonomic readiness).
         # Distance + elevation TRIMP-lite is fine for chronic load but blind to acute
         # parasympathetic recovery. Add HrvReading model + Garmin Connect / Apple
         # HealthKit sync; a >1 SD drop in 7-day rMSSD baseline should flag low

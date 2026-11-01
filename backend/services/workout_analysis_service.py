@@ -210,7 +210,7 @@ def _blocks(sig: np.ndarray, min_contrast: float):
 
 
 def detect_intervals(streams: Dict) -> Optional[Dict]:
-    # TODO(workout-analysis #118 — see GH issues): false positives on hilly easy runs.
+    # TODO(workout-analysis #41 — see GH issues): false positives on hilly easy runs.
     # Activity 342 (easy trail, no structure) gave 16 'work' blocks from climb/descent speed
     # changes. The site hides blocks unless the plan has intervals; MCP still returns them.
     # Fix sketch: detect on GAP speed, or only when the matched plan day has repeat steps.

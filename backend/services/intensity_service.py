@@ -25,7 +25,7 @@ Sports Sci 36:1287); treat the exact numbers as approximate. Each confirmed
 race with HR moves the user's curve toward what they actually held
 (offset shrunk like n / (n + 1)).
 """
-# TODO(pred-review #108 — see GH issues): fitted b (~0.4 on user 3) is well below
+# TODO(pred-review #40 — see GH issues): fitted b (~0.4 on user 3) is well below
 # the prior 1, likely errors-in-variables attenuation from minute-level HR/grade
 # noise; HRrest defaults to 60 bpm; the race-intensity prior anchors need checking
 # against the papers; Tier 3 does not yet take intensity as a feature.

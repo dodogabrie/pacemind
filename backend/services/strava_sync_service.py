@@ -299,7 +299,7 @@ class StravaSyncService:
                 # Mixed score: distance + elevation (normalized)
                 activity['_score'] = distance_km + (elevation_m / 100 if elevation_m else 0)
 
-            # TODO(pred-review #97 — see GH issues): top-N by distance/elevation,
+            # TODO(pred-review #29 — see GH issues): top-N by distance/elevation,
             # all-time; the Tier 2 fit wants the most recent runs. Keep streams
             # for the last ~20 runs plus the top-N, then re-run the backtest.
             # Sort by score descending and select top N (slice handles short lists)

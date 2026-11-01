@@ -19,11 +19,11 @@ DEFAULT_PARAMS = {
     'k_terrain_flat': 1.05
 }
 
-# TODO(coach-review #61 — see GH issues): only path to v_flat is training streams.
+# TODO(coach-review #7 — see GH issues): only path to v_flat is training streams.
 # Add a parallel calibration entry point that accepts a recent race time (5K/10K/
 # HM/M) and derives v_flat via Daniels' VDOT or Riegel projection. Lets users with
 # sparse Strava history still get sensible zones from a single PB.
-# TODO(coach-review #64 — see GH issues): no race-result feedback into v_flat.
+# TODO(coach-review #10 — see GH issues): no race-result feedback into v_flat.
 # After a B-race, observed-vs-predicted delta should damped-Bayesian-update v_flat
 # (α ≈ 0.3-0.5) instead of letting it drift only with everyday training data.
 # Hook from RaceResult insert → recalibration_service.recalibrate_from_race().
@@ -125,7 +125,7 @@ def calibrate_user_params(activity_streams: List[pd.DataFrame]) -> Dict[str, flo
     a_param = DEFAULT_PARAMS['a_param']
     k_terrain_down = DEFAULT_PARAMS['k_terrain_down']
     
-    # TODO(pred-review #95 — see GH issues): a_param always clamps to 1.0 and this
+    # TODO(pred-review #27 — see GH issues): a_param always clamps to 1.0 and this
     # linear model is not core.py's downhill model (no braking term). v_flat is
     # also divided by k_terrain_flat in pipeline.py; fixing that alone worsens the
     # backtest (10.9 %, -5.4 % bias). Refit downhill + flat factor jointly.

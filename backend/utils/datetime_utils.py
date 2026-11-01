@@ -45,7 +45,7 @@ def local_wall_clock(value: Optional[datetime], lon: Optional[float] = None) -> 
     plan compliance bucket by day, and a 22:00 local run bucketed by its UTC
     date lands on the wrong day — and, at a week boundary, in the wrong week.
 
-    TODO(multi-source #84 — see GH issues): approximate offset, no tz database.
+    TODO(multi-source #16 — see GH issues): approximate offset, no tz database.
     ponytail: longitude/15 instead of a real tz database. It is exact for zones
     on their geographic meridian and off by at most an hour or two for the
     political outliers (Spain, China, most of Argentina) and for DST, which

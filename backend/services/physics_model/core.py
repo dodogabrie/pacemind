@@ -86,7 +86,7 @@ def normalized_cost_ratio(grade: float) -> float:
     c0 = 3.6  # Minetti baseline cost at 0% grade
     return minetti_cost_of_transport(grade) / c0
 
-# TODO(pred-review #93 — see GH issues): Minetti curve too steep on steep climbs.
+# TODO(pred-review #25 — see GH issues): Minetti curve too steep on steep climbs.
 # Observed/Minetti pace ratio 1.75 vs 2.28 at 15-20 %, 2.41 vs 3.23 at 25-30 %;
 # no walk switch, no VAM ceiling (~1100 m/h). Fix: personal grade curve with a
 # flatter prior + VAM cap, gated by scripts/backtest_predictions.py on steep routes.

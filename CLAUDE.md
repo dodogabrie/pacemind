@@ -115,7 +115,7 @@ docker compose -f docker-compose.yml -f docker-compose.prod.yml up -d  # Product
 ```
 
 ### CI/CD
-No GitHub Actions while the repo is private (minutes cost money): run tests on the tuf with `rtest`. CI (ruff + pytest) gets added only after the repo goes public (#138).
+Run tests on the tuf with `rtest`. The repo is public since 2026-11-01, so GitHub Actions minutes are free; CI (ruff + pytest) is tracked in #60.
 
 ### Seed the race calendar
 ```bash
@@ -177,7 +177,7 @@ If during a task you discover a bug, a coaching/scientific mismatch, a code smel
 
    Use a stable `<tag>` per audit (e.g. `coach-review`, `security-review`, `perf-audit`) so related TODOs cluster grep-ably. The `#<n>` matches the GH issue number once known.
 
-2. **GitHub issue** on `dodogabrie/trail_gpx_analyzer` via the `mcp__github__issue_write` tool (`method: 'create'`). Include:
+2. **GitHub issue** on `dodogabrie/pacemind` via the `mcp__github__issue_write` tool (`method: 'create'`). Include:
    - Reproducer (inputs that trigger it) + observed vs. expected behaviour.
    - File / line references (the same lines that carry the TODO comment).
    - Citations to coaching / scientific literature when relevant (the project mixes coding and domain best practices).

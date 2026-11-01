@@ -1,6 +1,6 @@
 """System prompt for the LLM prediction agent."""
 
-# TODO(coach-review #57 — see GH issues): agent never asks for body weight.
+# TODO(coach-review #3 — see GH issues): agent never asks for body weight.
 # Onboarding/preferences collection should optionally request current weight (and
 # offer Apple Health / Garmin scale sync) so we can surface RED-S flags and W/kg
 # metrics. Add a prompt section once the BodyMeasurement model lands.

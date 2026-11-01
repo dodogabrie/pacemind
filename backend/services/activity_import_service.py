@@ -151,7 +151,7 @@ class ActivityImportService:
                 if reason:
                     skipped.append({'name': name, 'reason': reason})
                 else:
-                    # TODO(multi-source #89 — see GH issues): also counts files already present.
+                    # TODO(multi-source #21 — see GH issues): also counts files already present.
                     # ingest() doesn't say created vs updated, so a re-import reports "N imported".
                     # Fix: ingest() returns the outcome and we count already_present apart.
                     imported += 1
@@ -192,7 +192,7 @@ class ActivityImportService:
             return 'could not be stored'
         return ''
 
-    # TODO(multi-source #85 — see GH issues): a process death mid-import leaves
+    # TODO(multi-source #17 — see GH issues): a process death mid-import leaves
     # this row saying 'syncing' forever, and POST /api/activities/import then
     # 409s for good. sync_status.updated_at is a live heartbeat (we commit
     # every COMMIT_EVERY files) — sweep stale 'syncing' rows on app start, or

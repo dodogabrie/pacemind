@@ -23,7 +23,7 @@ logger = logging.getLogger(__name__)
 OVERPASS_URL = "https://overpass-api.de/api/interpreter"
 # The main instance throttles by refusing connections from a busy IP; the
 # mirror keeps terrain working meanwhile. Tried in order.
-# TODO(deploy-review #90 — see GH issues): public Overpass refuses busy IPs and the
+# TODO(deploy-review #22 — see GH issues): public Overpass refuses busy IPs and the
 # mirror times out on real bboxes, so terrain degrades to "unknown". Fix: retry later
 # with a short-TTL cache entry, throttle calls, or self-host Overpass for production.
 OVERPASS_URLS = (OVERPASS_URL, "https://maps.mail.ru/osm/tools/overpass/api/interpreter")

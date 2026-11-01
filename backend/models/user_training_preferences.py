@@ -12,7 +12,7 @@ class UserTrainingPreferences(db.Model):
     every conversation.
     """
 
-    # TODO(coach-review #57 — see GH issues): no anthropometrics (weight / body comp).
+    # TODO(coach-review #3 — see GH issues): no anthropometrics (weight / body comp).
     # Blocks RED-S screening, hydration sanity checks, and W/kg metrics. Add a
     # separate BodyMeasurement table (date-series) rather than denormalising here.
 

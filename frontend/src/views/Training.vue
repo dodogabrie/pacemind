@@ -302,7 +302,7 @@
         </div>
 
         <!-- Results -->
-        <!-- TODO(dead-ui #79 — see GH issues): `downloadResults` is never defined in
+        <!-- TODO(dead-ui #12 — see GH issues): `downloadResults` is never defined in
              <script setup>, so this whole panel is unreachable and the user gets no
              success/skipped/failed feedback after a bulk download. Looks like a ref
              dropped in a refactor: declare `const downloadResults = ref(null)` and

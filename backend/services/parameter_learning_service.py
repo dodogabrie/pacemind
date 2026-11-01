@@ -87,7 +87,7 @@ def quality_filter(acts: List[Activity]) -> List[Activity]:
 
 def fit_params(activities: List[Activity]) -> Dict[str, float]:
     """Physics params calibrated on the last CALIBRATION_WINDOW activities."""
-    # TODO(pred-review #104 — see GH issues): replace this point estimate with
+    # TODO(pred-review #36 — see GH issues): replace this point estimate with
     # hierarchical personal params (population prior on params only) and a
     # posterior interval; the empirical interval below covers the UI need now.
     window = activities[-CALIBRATION_WINDOW:]

@@ -443,7 +443,7 @@ class PlanComplianceService:
     # Daily readiness check-in + same-week swap/downgrade is implemented in
     # services.plan_adjustment_service.PlanAdjustmentService (coach-review #55).
     # Compliance scoring (this service) stays post-hoc and unchanged.
-    # TODO(coach-review #58 — see GH issues): no dynamic re-planning from compliance.
+    # TODO(coach-review #4 — see GH issues): no dynamic re-planning from compliance.
     # If 2-week rolling compliance < 70% or TSB < -15, the engine should regenerate
     # the remaining weeks (reduced volume, push peak by 1w). Today we only emit a
     # notification — the plan stays unchanged.

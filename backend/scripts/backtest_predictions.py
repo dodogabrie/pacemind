@@ -22,7 +22,7 @@ Each row's physics uses params fitted only on the runs before THAT row.
 Every DB connection is forced into a read-only transaction and the session is
 rolled back at the end. Postgres only (the guard uses SET SESSION).
 """
-# TODO(pred-review #105 — see GH issues): one user, training runs only, the
+# TODO(pred-review #37 — see GH issues): one user, training runs only, the
 # recorded track as the GPX, n~39: differences < 2 MAPE points are noise. Add
 # organiser-GPX robustness (perturbed D+) and race-labelled targets after P13.
 import argparse

@@ -4,7 +4,7 @@ from database import db
 from datetime import datetime, timezone
 
 
-# TODO(pred-review #100 — see GH issues): table unused since the leave-one-out
+# TODO(pred-review #32 — see GH issues): table unused since the leave-one-out
 # evaluation service was deleted (it trained on future activities). Drop via
 # migration; do not write new code against it.
 class EvaluationStatus(db.Model):

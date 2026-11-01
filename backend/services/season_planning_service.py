@@ -54,7 +54,7 @@ class SeasonPlanningService:
             'total_races': len(races),
         }
 
-    # TODO(coach-review #63 — see GH issues): we validate, we don't propose.
+    # TODO(coach-review #9 — see GH issues): we validate, we don't propose.
     # When the user creates a 100K/100M A-race, we should query race_calendar with
     # the right date windows ([R-8w, R-6w] for ~0.5D, [R-4w, R-3w] for ~0.2D),
     # rank by _score_race, and surface tune-up candidates. Add

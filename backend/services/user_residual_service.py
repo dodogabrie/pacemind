@@ -74,7 +74,7 @@ class UserResidualService:
 
             stream_df = stream_df[0]  # Get first (only) dataframe
 
-            # TODO(pred-review #100 — see GH issues): these segments feed no model:
+            # TODO(pred-review #32 — see GH issues): these segments feed no model:
             # the rebuilt Tier 3 (residual_ml_service.py) learns from walk-forward
             # physics on the raw streams (#107). Only the include/exclude flag is used.
             # Move the flag onto Activity, stop collecting, drop user_activity_residuals.

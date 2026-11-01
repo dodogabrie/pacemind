@@ -22,7 +22,7 @@ MARATHON_DISTANCE_M = 42000.0  # Marathon distance threshold in meters
 DEFAULT_ULTRA_BETA = 0.4       # Ultra fatigue intensity coefficient
 DEFAULT_ULTRA_GAMMA = 1.5      # Non-linearity exponent for ultra fatigue
 
-# TODO(pred-review #99 — see GH issues): ~10 %/1000 m, applied on descents too,
+# TODO(pred-review #31 — see GH issues): ~10 %/1000 m, applied on descents too,
 # ignores submaximal intensity (Wehrlin & Hallen 2006: ~6-7 % VO2max/1000 m).
 # Fix: uphill/flat only, intensity-scaled; no altitude-labelled data yet.
 def altitude_physiological_factor(elevation_m: float) -> float:
@@ -126,7 +126,7 @@ def run_physics_prediction(
         norm_load = accumulated_load / normalization_distance
         base_fatigue = 1.0 + (fatigue_alpha * norm_load)
 
-        # TODO(pred-review #94 — see GH issues): 0.4/1.5 never fitted; 3.19x pace at
+        # TODO(pred-review #26 — see GH issues): 0.4/1.5 never fitted; 3.19x pace at
         # 172 km. No data > 67 km to validate. Fix: fitted effort-hours / descent
         # fatigue with capped extrapolation once race labels exist.
         # Ultra-distance multiplier: exponential growth beyond marathon
