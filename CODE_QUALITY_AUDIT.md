@@ -328,7 +328,6 @@ Also a cleanup picked up by ruff E712: `df["moving"] == True` → `df["moving"].
 - [ ] `frontend/src/stores/` — Pinia stores: any unhandled promise rejections, race conditions on parallel fetches?
 - [x] ~~`backend/api/billing.py` (322 lines) — Stripe webhook handler is security-sensitive; verify signature checking and idempotency.~~ Done in Session 4 (6 fixes including a real billing bug — `cancel_subscription` was revoking premium access immediately instead of at period end, and race day pass duplicate webhooks were silently extending pass expiry).
 - [x] ~~`backend/api/training_plan.py` (520 lines) — largest API blueprint; check for missing input validation.~~ Done in Session 7 (8 fixes including a real correctness bug — stringy `distance_km` PATCH crashed week-totals sum() and persisted the corruption — and a real header-injection vector in `export_ics` Content-Disposition).
-- [ ] `data_analysis/predictor/train.py` — model training script; check for data leakage in train/val split.
 
 ### Lower impact / chores
 

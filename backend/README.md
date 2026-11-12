@@ -57,9 +57,6 @@ flask db upgrade                 # apply
 
 # Race calendar
 python scripts/seed_races.py     # load curated race seed (idempotent)
-
-# Speed up startup
-python scripts/cache_global_curve.py    # pre-computes pace-grade curve
 ```
 
 Dev default: `RUN_MIGRATIONS=0` — migrations are explicit, not auto-applied on every restart.
@@ -87,8 +84,6 @@ backend/
 
 ## Troubleshooting
 
-- **Slow startup (~30s):** run `python scripts/cache_global_curve.py`.
-- **"ML model not found":** train via `cd ../data_analysis && python predictor/train.py`.
 - **"STRAVA_CLIENT_ID not found":** create `backend/.env` from `.env.example`.
 - **CORS errors:** check `CORS_ORIGINS` in `config.py` matches the frontend URL.
 - **Stripe webhook (local):** `stripe listen --forward-to localhost:5000/api/billing/webhook`.
